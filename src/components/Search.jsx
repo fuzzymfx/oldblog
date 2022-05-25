@@ -12,7 +12,7 @@ export default function Search() {
 			padding: '2px 10px',
 			display: 'flex',
 			alignItems: 'center',
-			width: '50%',
+			width: '60%',
 			margin: '0 auto',
 			marginTop: '10px',
 			marginBottom: '10px',

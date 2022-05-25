@@ -17,7 +17,10 @@ export default function Dashboard() {
 								Here I random shitpost on my daily drivers, chill outs & research thingys.
 							</p>
 							<a href="https://anubhavp.me">
-								<button className="btn btn-primary btn-sm">Profile</button>
+								<button className="btn btn-primary btn-sm" style={{
+									backgroundColor: '#1a1a1a',
+									borderColor: '#6c63ff',
+								}}>Profile</button>
 							</a>
 						</div>
 						<img className="img-fluid w-50 d-none d-sm-block" src={undraw_programming_2svr} alt="" />
