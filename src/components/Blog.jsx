@@ -15,7 +15,8 @@ function parsemd(Nav) {
 }
 export default function Blog() {
 		parsemd(Nav)
-	return (<div id='nav'  className="row justify-content-center mx-1" >
+	return (
+	<div id='nav'className="" style={{ textAlign: 'center' }} >
 		
 	</div>)
 }
