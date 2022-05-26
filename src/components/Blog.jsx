@@ -16,7 +16,7 @@ function parsemd(Nav) {
 export default function Blog() {
 		parsemd(Nav)
 	return (
-	<div className="" style={{ alignItems: 'center', maxWidth:'50%', margin:'auto', }} >
+	<div className="" style={{ alignItems: 'center', maxWidth:'80%', margin:'auto', }} >
 		<p id='nav' className=" p-0">
 
 		</p>
