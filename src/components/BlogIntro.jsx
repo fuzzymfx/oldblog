@@ -19,8 +19,8 @@ export default function BlogIntro() {
 			</h1>
 			<Search />
 			<div style={{ alignItems: 'center' }}>
-				<div className="row justify-content-md-center" >
-					<div className="col-md-auto py-5">
+				<div className="row justify-content-center" >
+					<div className="col-auto py-5 ">
 						<Card sx={{ maxWidth: 345 }}>
 							<CardMedia
 								component="img"
@@ -43,7 +43,7 @@ export default function BlogIntro() {
 							</CardActions>
 						</Card>
 					</div>
-					<div className="col-md-auto py-5">
+					<div className="col-auto py-5">
 						<Card sx={{ maxWidth: 345 }}>
 							<CardMedia
 								component="img"
@@ -67,7 +67,7 @@ export default function BlogIntro() {
 						</Card>
 
 					</div>
-					<div className="col-md-auto py-5">
+					<div className="col-auto py-5">
 						<Card sx={{ maxWidth: 345 }}>
 							<CardMedia
 								component="img"
