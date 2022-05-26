@@ -22,7 +22,7 @@ export default function BlogIntro() {
 			<div>
 				<div >
 					<div className="row justify-content-center mx-1" >
-					<div className="col-auto py-5">
+					<div className="col-auto py-4">
 							<Card sx={{ maxWidth: 345 }}>
 								<CardMedia
 									component="img"
@@ -46,7 +46,7 @@ export default function BlogIntro() {
 							</Card>
 
 						</div>
-						<div className="col-auto py-5 ">
+						<div className="col-auto py-4 ">
 							<Card sx={{ maxWidth: 345 }}>
 								<CardMedia
 									component="img"
@@ -69,7 +69,7 @@ export default function BlogIntro() {
 							</Card>
 						</div>
 						
-						<div className="col-auto py-5">
+						<div className="col-auto py-4">
 							<Card sx={{ maxWidth: 335 }}>
 								<CardMedia
 									component="img"
