@@ -7,6 +7,7 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import BlogIntro from './components/BlogIntro';
+import Blog from './components/Blog';
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <Header />
       <Dashboard />
       <BlogIntro />
+      <Blog />
     </>
   )
 }
