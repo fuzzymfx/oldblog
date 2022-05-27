@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Nav from '../md/Nav.md'
-import '../assets/css/github-markdown.css'
+import '../assets/css/nav.css'
 import hljs from 'highlight.js';
 
 const md = require('markdown-it')({
