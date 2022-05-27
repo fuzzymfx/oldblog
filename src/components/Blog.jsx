@@ -1,25 +1,47 @@
-import React from 'react'
-import Markdown from 'markdown-to-jsx'
+import React, { useEffect } from 'react'
 import Nav from '../md/Nav.md'
-import { marked } from 'marked';
+import '../assets/css/github-markdown.css'
+import hljs from 'highlight.js';
 
-function parsemd(Nav) {
-	fetch(Nav)
-		.then(response => {
-			return response.text()
-		})
-		.then(text => {
-			const html = marked.parse(text)
-			document.getElementById('nav').innerHTML = html;
-		})
+const md = require('markdown-it')({
+	html: true,
+	linkify: true,
+	typographer: true,
+	highlight(str, language) {
+		if (language && hljs.getLanguage(language)) {
+			try {
+
+				return hljs.highlight(str, { language: language }).value;
+			} catch (err) {
+				console.log(err)
+			}
+		}
+
+		return null;
+	}
+});
+
+async function parsemd(Nav) {
+	const response = await fetch(Nav)
+	const text = await response.text()
+	const html = md.render(text)
+	return html
 }
-export default function Blog() {
-		parsemd(Nav)
-	return (
-	<div style={{ alignItems: 'center', maxWidth:'70%', margin:'auto', }} >
-		<p id='nav' className=" p-0">
 
-		</p>
-		
-	</div>)
+export default function Blog() {
+	const [html, setHtml] = React.useState('')
+
+	useEffect(() => {
+		(async () => {
+			const renderedHTML = await parsemd(Nav)
+			console.log(renderedHTML)
+			setHtml(renderedHTML)
+		})()
+	}, [])
+
+	return (
+		<div style={{ alignItems: 'center', maxWidth: '70%', margin: 'auto', }} >
+			<p id="nav" className='markdown-body' dangerouslySetInnerHTML={{__html: html}}>
+			</p>
+		</div>)
 }
