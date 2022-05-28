@@ -3,7 +3,7 @@
 
 ### Tech
 
-1. [React](http://anubhavp.me)
+1. [React](./react.html)
 1. [Firebase](http://anubhavp.me)
 1. [GoLang](http://anubhavp.me)
 1. [Flutter](http://anubhavp.me)
