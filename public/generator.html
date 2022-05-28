@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shitpost.IN</title>
+    <link rel="stylesheet" href="./assets/css/github-markdown.css">
+</head>
+
+<body>
+    <div class="markdown-body">
+
+        <pre><code class="language-js">import fs from &#39;fs&#39;
+import glob from &#39;glob&#39;
+import matter from &#39;gray-matter&#39;
+import marked from &#39;marked&#39;
+import mkdirp from &#39;mkdirp&#39;
+import path from &#39;path&#39;
+
+const readFile = (filename) =&gt; {
+    const rawFile = fs.readFileSync(filename, &#39;utf8&#39;)
+    const parsed = matter(rawFile)
+    const html = marked(parsed.content)
+
+    return {...parsed, html }
+}
+
+const templatize = (template, { date, title, content }) =&gt;
+    template
+    .replace(/&lt;!-- PUBLISH_DATE --&gt;/g, date)
+    .replace(/&lt;!-- TITLE --&gt;/g, title)
+    .replace(/&lt;!-- CONTENT --&gt;/g, content)
+
+const saveFile = (filename, contents) =&gt; {
+    const dir = path.dirname(filename)
+    mkdirp.sync(dir)
+    fs.writeFileSync(filename, contents)
+}
+
+const getOutputFilename = (filename, outPath) =&gt; {
+    const basename = path.basename(filename)
+    const newfilename = basename.substring(0, basename.length - 3) + &#39;.html&#39;
+    const outfile = path.join(outPath, newfilename)
+    return outfile
+}
+
+const processFile = (filename, template, outPath) =&gt; {
+    const file = readFile(filename)
+    const outfilename = getOutputFilename(filename, outPath)
+
+    const templatized = templatize(template, {
+        date: file.data.date,
+        title: file.data.title,
+        content: file.html,
+    })
+
+    saveFile(outfilename, templatized)
+    console.log(`📝 ${outfilename}`)
+}
+
+const main = () =&gt; {
+    const srcPath = path.resolve(&#39;src&#39;)
+    const outPath = path.resolve(&#39;public&#39;)
+    const template = fs.readFileSync(path.join(srcPath, &#39;template.html&#39;), &#39;utf8&#39;)
+    const filenames = glob.sync(srcPath + &#39;/pages/**/*.md&#39;)
+
+    filenames.forEach((filename) =&gt; {
+        processFile(filename, template, outPath)
+    })
+}
+
+main()
+</code></pre>
+
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
