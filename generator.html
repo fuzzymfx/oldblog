@@ -81,30 +81,67 @@
 					</p>
 				</div>
 
-				<h1 id="navigation">Navigation</h1>
-<h3 id="tech">Tech</h3>
-<ol>
-<li><a href="./react.html">React</a></li>
-<li><a href="http://anubhavp.me">Firebase</a></li>
-<li><a href="http://anubhavp.me">GoLang</a></li>
-<li><a href="http://anubhavp.me">Flutter</a></li>
-<li><a href="./generator.html">Generator</a></li>
-</ol>
-<hr>
-<h3 id="books">Books</h3>
-<ol>
-<li><a href="http://anubhavp.me">The Hobbit</a></li>
-<li><a href="http://anubhavp.me">Harry Potter</a></li>
-<li><a href="http://anubhavp.me">Shiva Triology</a></li>
-</ol>
-<hr>
-<h3 id="movies-music">Movies/ Music</h3>
-<ol>
-<li><a href="http://anubhavp.me">Stranger Things</a></li>
-<li><a href="http://anubhavp.me">Sex Education</a></li>
-<li><a href="http://anubhavp.me">Schitts Creek</a></li>
-<li><a href="http://anubhavp.me">The Office</a></li>
-</ol>
+				<pre><code class="language-js">import fs from &#39;fs&#39;
+import glob from &#39;glob&#39;
+import matter from &#39;gray-matter&#39;
+import marked from &#39;marked&#39;
+import mkdirp from &#39;mkdirp&#39;
+import path from &#39;path&#39;
+
+const readFile = (filename) =&gt; {
+    const rawFile = fs.readFileSync(filename, &#39;utf8&#39;)
+    const parsed = matter(rawFile)
+    const html = marked(parsed.content)
+
+    return {...parsed, html }
+}
+
+const templatize = (template, { date, title, content }) =&gt;
+    template
+    .replace(/&lt;!-- PUBLISH_DATE --&gt;/g, date)
+    .replace(/&lt;!-- TITLE --&gt;/g, title)
+    .replace(/&lt;!-- CONTENT --&gt;/g, content)
+
+const saveFile = (filename, contents) =&gt; {
+    const dir = path.dirname(filename)
+    mkdirp.sync(dir)
+    fs.writeFileSync(filename, contents)
+}
+
+const getOutputFilename = (filename, outPath) =&gt; {
+    const basename = path.basename(filename)
+    const newfilename = basename.substring(0, basename.length - 3) + &#39;.html&#39;
+    const outfile = path.join(outPath, newfilename)
+    return outfile
+}
+
+const processFile = (filename, template, outPath) =&gt; {
+    const file = readFile(filename)
+    const outfilename = getOutputFilename(filename, outPath)
+
+    const templatized = templatize(template, {
+        date: file.data.date,
+        title: file.data.title,
+        content: file.html,
+    })
+
+    saveFile(outfilename, templatized)
+    console.log(`📝 ${outfilename}`)
+}
+
+const main = () =&gt; {
+    const srcPath = path.resolve(&#39;src&#39;)
+    const outPath = path.resolve(&#39;public&#39;)
+    const template = fs.readFileSync(path.join(srcPath, &#39;template.html&#39;), &#39;utf8&#39;)
+    const filenames = glob.sync(srcPath + &#39;/pages/**/*.md&#39;)
+
+    filenames.forEach((filename) =&gt; {
+        processFile(filename, template, outPath)
+    })
+}
+
+main()
+</code></pre>
 
 			</div>
 
