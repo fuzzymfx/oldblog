@@ -7,6 +7,7 @@
 1. [Firebase](http://anubhavp.me)
 1. [GoLang](http://anubhavp.me)
 1. [Flutter](http://anubhavp.me)
+1. [Generator](./generator.html)
 ---
 ### Books
 
