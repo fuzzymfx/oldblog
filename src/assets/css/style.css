@@ -1,0 +1,44 @@
+@media (prefers-color-scheme: light) {
+     :root {
+        color-scheme: dark;
+        --body-bg: #FFFFFF;
+        --body-color: #0d1117;
+        --head-text-color: #6c63ff;
+        --card--bg: #FFFFFF;
+        --card--text: #888888;
+        --card--head: #0d1117;
+    }
+}
+
+
+/* Dark mode */
+
+@media (prefers-color-scheme: dark) {
+     :root {
+        color-scheme: dark;
+        --body-bg: #0d1117;
+        --body-color: #FFFFFF;
+        --head-text-color: #ffffff;
+        --card--bg: #0d1117;
+        --card--text: #FFFFFF;
+        --card--head: #FFFFFF;
+    }
+}
+
+.cdx {
+    background-color: var(--card--bg);
+    color: var(--card--text);
+}
+
+.cdt {
+    color: var(--card--head);
+}
+
+.head {
+    color: var(--head-text-color);
+}
+
+body {
+    background: var(--body-bg);
+    color: var(--body-color);
+}

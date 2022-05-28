@@ -9,6 +9,7 @@ import '@fontsource/roboto/700.css';
 import BlogIntro from './components/BlogIntro';
 import Blog from './components/Blog';
 import Footer from './components/Footer';
+import './assets/css/style.css';
 
 
 
