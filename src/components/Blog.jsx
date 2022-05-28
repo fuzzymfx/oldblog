@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Nav from '../md/Nav.md'
+import Nav from '../pages/Nav.md'
 import '../assets/css/nav.css'
 import hljs from 'highlight.js';
 
