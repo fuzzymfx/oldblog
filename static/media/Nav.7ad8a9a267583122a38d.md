@@ -8,6 +8,7 @@
 1. [GoLang](http://anubhavp.me)
 1. [Flutter](http://anubhavp.me)
 1. [Generator](./generator.html)
+1. [Web3](.InfeasibleWeb3/.html)
 ---
 ### Books
 
