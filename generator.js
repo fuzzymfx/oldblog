@@ -33,11 +33,12 @@ const readFile = (filename) => {
     return {...parsed, html }
 }
 
-const templatize = (template, { date, title, content }) =>
+const templatize = (template, { date, title, content, author }) =>
     template
     .replace(/<!-- PUBLISH_DATE -->/g, date)
     .replace(/<!-- TITLE -->/g, title)
     .replace(/<!-- CONTENT -->/g, content)
+    .replace(/<!-- AUTHOR -->/g, author)
 
 const saveFile = (filename, contents) => {
     const dir = path.dirname(filename)
@@ -60,6 +61,7 @@ const processFile = (filename, template, outPath) => {
         date: file.data.date,
         title: file.data.title,
         content: file.html,
+        author: file.data.author,
     })
 
     saveFile(outfilename, templatized)
