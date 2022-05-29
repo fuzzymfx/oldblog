@@ -21,8 +21,8 @@ export default function BlogIntro() {
 			<Search />
 			<div>
 				<div >
-					<div className="row justify-content-center mx-1 cdx" >
-					<div className="col-auto py-5 cdx" id='techhead'>
+					<div className="row justify-content-center mx-1" >
+					<div className="col-auto py-5 " id='techhead'>
 							<Card  sx={{ maxWidth: 345 }}>
 								<CardMedia
 									component="img"

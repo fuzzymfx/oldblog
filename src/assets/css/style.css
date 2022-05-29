@@ -7,6 +7,8 @@
         --card--bg: #FFFFFF;
         --card--text: #888888;
         --card--head: #0d1117;
+        --dash--bg: #212529;
+        --foot-text-color: black;
     }
 }
 
@@ -19,9 +21,11 @@
         --body-bg: #0d1117;
         --body-color: #FFFFFF;
         --head-text-color: #ffffff;
-        --card--bg: #0d1117;
-        --card--text: #FFFFFF;
-        --card--head: #FFFFFF;
+        --card--bg: #ffffff;
+        --card--text: #0d1117;
+        --card--head: #0d1117;
+        --dash--bg: #0d1117;
+        --foot-text-color: #ffffff;
     }
 }
 
@@ -36,6 +40,14 @@
 
 .head {
     color: var(--head-text-color);
+}
+
+.cdin {
+    background-color: var(--dash--bg);
+}
+
+.foot {
+    color: var(--foot-text-color);
 }
 
 body {

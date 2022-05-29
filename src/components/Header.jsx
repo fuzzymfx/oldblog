@@ -5,7 +5,7 @@ import a1 from '../assets/img/a1.jpeg'
 
 export default function Header() {
   return (<>
-    <Navbar className=" navbar navbar-expand-lg bg-dark navbar-dark py-3" bg="dark" expand="lg">
+    <Navbar className=" navbar navbar-expand-lg navbar-dark py-3 cdin" expand="lg">
       <Container >
         <Nav >
           <Avatar className="mx-2 d-none d-md-block" alt="Anubhab Patnaik" src={a1} />

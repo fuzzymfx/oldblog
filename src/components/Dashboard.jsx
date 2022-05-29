@@ -4,8 +4,8 @@ import undraw_programming_2svr from '../assets/img/undraw_programming_2svr.svg'
 export default function Dashboard() {
 	return (
 		<>
-			<section className="bg-dark text-light p-5  ">
-				<div className="container">
+			<section className="text-light p-5 cdin ">
+				<div className="container ">
 
 					<div className="d-sm-flex align-items-center justify-content-between">
 						<div className="img-home">
