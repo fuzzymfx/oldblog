@@ -1,5 +1,5 @@
 ---
-title: Page 2
+title: Static Site Generator (SSG)
 author: Anubhab Patnaik
 date: May 29, 2022
 ---
