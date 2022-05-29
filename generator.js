@@ -1,14 +1,34 @@
 import fs from 'fs'
 import glob from 'glob'
 import matter from 'gray-matter'
-import marked from 'marked'
 import mkdirp from 'mkdirp'
 import path from 'path'
+import hljs from 'highlight.js';
+import MarkdownIt from 'markdown-it'
+
+const md = MarkdownIt({
+    html: true,
+    linkify: true,
+    typographer: true,
+    highlight(str, language) {
+        if (language && hljs.getLanguage(language)) {
+            try {
+
+                return hljs.highlight(str, { language: language }).value;
+            } catch (err) {
+                console.log(err)
+            }
+        }
+
+        return null;
+    }
+});
+
 
 const readFile = (filename) => {
     const rawFile = fs.readFileSync(filename, 'utf8')
     const parsed = matter(rawFile)
-    const html = marked(parsed.content)
+    const html = md.render(parsed.content)
 
     return {...parsed, html }
 }
