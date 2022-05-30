@@ -17,26 +17,82 @@
             margin-right: 10px;
             margin-left: 10px;
         }
+        
+        .auth {
+            font-style: italic;
+        }
+        
+        .dt {
+            font-size: 20px;
+        }
+        
+        .nav {
+            margin-top: 10px;
+            font-size: 20px;
+            margin-left: 10px;
+            padding: 10px;
+            padding-right: 20px;
+            margin-right: 10px;
+        }
+        
+        span+span {
+            margin-left: 10px;
+        }
+        
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 
 <body class="markdown-body">
+    <div class="container nav">
+        <div class="row flex">
+            <div class="col-md-12">
+                <div>
+                    <span>
+                        <a href="./index.html">Home</a>
+                    </span>
+                    <span>
+                        <a href="https://anubhavp.me">Profile</a>
+                    </span>
+                    <span>
+                        <a href="https://github.com/codebotx">GitHub</a>
+                    </span>
+
+                </div>
+            </div>
+            <div>
+                <a href="mailto:anubhabr50@gmail.com">Contact Me</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3 style="font-size: 80px; padding-left: 10px;">
+            Shitpost.IN
+        </h3>
+    </div>
     <div class="md">
-        <div>
+        <div class="head">
             <h1>
                 Welcome to My Static Site
             </h1>
-            <p>
+            <p class="dt">
                 Aug 15, 2020
             </p>
-            <p>
+        </div>
+        <div>
+            <p class='auth'>
+
                 JavaScript Joel
             </p>
-        </div>
-        <p>👋 Welcome fellow Tailwind CSS and miminal monochrome blog fan. This starter template provides a starting point to create your own minimal monochrome blog using Tailwind CSS and vanilla Javascript.</p>
+            <p>👋 Welcome fellow Tailwind CSS and miminal monochrome blog fan. This starter template provides a starting point to create your own minimal monochrome blog using Tailwind CSS and vanilla Javascript.</p>
 <p>The basic blog page layout is available and all using the default Tailwind CSS classes (although there are a few hardcoded style tags). If you are going to use this in your project, you will want to convert the classes into components.</p>
 
+        </div>
     </div>
+
 
 
 </body>

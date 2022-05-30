@@ -25,7 +25,7 @@ ones that are so nuanced that they can't be tackled by any number of token stand
 This post is my attempt at shedding some light on the problems that I'm aware of.
 
 - [Social](#social)
-  - [The majority of crypto is shady, even for artists.](#the-majority-of-crypto-is-shady-even-for-artists)
+  - [The majority of crypto is shady, even for artists.](#the-majority-of-crypto-is-shady-even-for-artists-the-majority-of-crypto-is-shady-even-for-artists)
   - [NFT marketplaces are centralised and controlled.](#nft-marketplaces-are-centralised-and-controlled)
   - [NFTs are... worthless?](#nfts-are-worthless)
   - [Your 'get-rich-quick' chances are miniscule.](#your-get-rich-quick-chances-are-miniscule)
@@ -35,7 +35,7 @@ This post is my attempt at shedding some light on the problems that I'm aware of
 
 ## Social
 
-### The majority of crypto is shady, even for artists.
+### The majority of crypto is shady, even for artists {#the-majority-of-crypto-is-shady-even-for-artists}
 
 Cryptocurrency is always found in a massive web of controversy, frauds and scams.
 Show me one successful crypto project that has served a real purpose,
@@ -52,11 +52,11 @@ But this is far from a realistic solution.
 A creator should not be bothered with signing tokens on a myriad of different markets and blockchains just to avoid being wronged.
 Why should an artist **pay** to register an NFT on Flow, Ethereum, Solana, Monero, Tezos and countless other chains under the sun?
 
-### NFT marketplaces are centralised and controlled.
+### NFT marketplaces are centralised and controlled
 
 The willingness to be free from institutional regulation and government censorship is at the nexus of "web3".
 The idea of a government powerless to stop a citizen from owning any digital asset appeals to many.
-However under this veil of liberation and freedom lies a truth that no crypto-bro will tell you - 
+However under this veil of liberation and freedom lies a truth that no crypto-bro will tell you -
 The very marketplace you view and trade your assets on are centralised and controlled.
 
 NFT assets **can** be removed from [objkt](https://objkt.com/) and [opensea](https://opensea.io/), you **can** be banned from [coinbase](https://www.coinbase.com).
@@ -68,7 +68,7 @@ your NFT will be delisted from a supposedly "decentralised" and "uncensorable" m
 > - promote suicide or self-harm,
 > - incite hate or violence against others,
 > - degrade or dox another individual,
-> - otherwise violate our [terms of service](https://opensea.io/tos). 
+> - otherwise violate our [terms of service](https://opensea.io/tos).
 
 But what constitutes "violence or hate against others"?
 Will I get banned if I make fun of a political figure?
@@ -111,10 +111,10 @@ If you can use it as your twitter avatar, I can too.
 And unlike the real world, my avatar has the exact same pixel composition as yours.
 
 Whatever you can do it with it, I can.
-Except you now bear a financial loss in pursuit of this "ownership" 
+Except you now bear a financial loss in pursuit of this "ownership"
 because people told you it means something.
 
-### Your 'get-rich-quick' chances are miniscule.
+### Your 'get-rich-quick' chances are miniscule
 
 **The value of an NFT is what you believe it to be.**
 
@@ -142,7 +142,7 @@ but enough people have already drawn this analogy so that I don't have to.
 
 ## Engineering
 
-### NFTs CAN be altered.
+### NFTs CAN be altered
 
 Unknown to most regular consumers of crypto,
 the actual items represented by NFTs they own aren't actually stored on a blockchain.
@@ -157,7 +157,7 @@ Or serving different files based on where the client requesting the resource is 
 There is even a word for this act, it starts with a **c**, ends with an **r** and rhymes with "tensor".
 See [this NFT](https://moxie.org/2022/01/07/web3-first-impressions.html#making-an-nft) by Moxie Marlinspike as an example.
 
-### Web3 is not technically feasible.
+### Web3 is not technically feasible
 
 Ever so often you'll cross web3 enthusiasts on twitter who claim the internet will be decentralized in the near future.
 That there will be no institutional control and a governments' powers over social media will cease to exist.
