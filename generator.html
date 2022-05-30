@@ -17,23 +17,77 @@
             margin-right: 10px;
             margin-left: 10px;
         }
+        
+        .auth {
+            font-style: italic;
+        }
+        
+        .dt {
+            font-size: 20px;
+        }
+        
+        .nav {
+            margin-top: 10px;
+            font-size: 20px;
+            margin-left: 10px;
+            padding: 10px;
+            padding-right: 20px;
+            margin-right: 10px;
+        }
+        
+        span+span {
+            margin-left: 10px;
+        }
+        
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
     </style>
 </head>
 
 <body class="markdown-body">
+    <div class="container nav">
+        <div class="row flex">
+            <div class="col-md-12">
+                <div>
+                    <span>
+                        <a href="./index.html">Home</a>
+                    </span>
+                    <span>
+                        <a href="https://anubhavp.me">Profile</a>
+                    </span>
+                    <span>
+                        <a href="https://github.com/codebotx">GitHub</a>
+                    </span>
+
+                </div>
+            </div>
+            <div>
+                <a href="mailto:anubhabr50@gmail.com">Contact Me</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h3 style="font-size: 80px; padding-left: 10px;">
+            Shitpost.IN
+        </h3>
+    </div>
     <div class="md">
-        <div>
+        <div class="head">
             <h1>
                 Static Site Generator (SSG)
             </h1>
-            <p>
+            <p class="dt">
                 May 29, 2022
             </p>
-            <p>
+        </div>
+        <div>
+            <p class='auth'>
+
                 Anubhab Patnaik
             </p>
-        </div>
-        <pre><code class="language-js"><span class="hljs-keyword">import</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;fs&#x27;</span>
+            <pre><code class="language-js"><span class="hljs-keyword">import</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;fs&#x27;</span>
 <span class="hljs-keyword">import</span> glob <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;glob&#x27;</span>
 <span class="hljs-keyword">import</span> matter <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;gray-matter&#x27;</span>
 <span class="hljs-keyword">import</span> marked <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;marked&#x27;</span>
@@ -95,7 +149,9 @@
 <span class="hljs-title function_">main</span>()
 </code></pre>
 
+        </div>
     </div>
+
 
 
 </body>
