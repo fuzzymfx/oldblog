@@ -5,9 +5,7 @@ import mkdirp from 'mkdirp'
 import path from 'path'
 import hljs from 'highlight.js';
 import MarkdownIt from 'markdown-it'
-// import marked from 'marked'
 import markdownItAnchor from 'markdown-it-anchor'
-// import slugify from '@sindresorhus/slugify'
 import string from 'string'
 
 const slugify = s => string(s).slugify().toString()
