@@ -17,7 +17,7 @@
 1. [Shiva Triology](http://anubhavp.me)
 
 ---
-### Movies/ Music
+### Movies/ Music & Tv
 
 1. [Stranger Things](http://anubhavp.me)
 1. [Sex Education](http://anubhavp.me)
