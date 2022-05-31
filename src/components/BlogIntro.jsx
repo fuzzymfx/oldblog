@@ -41,7 +41,7 @@ export default function BlogIntro() {
 								</CardContent>
 								<CardActions className='cdx' >
 									
-									<Button  size="small" href="#headin">Learn More</Button>
+									<Button  size="small" href="#tech">Learn More</Button>
 								</CardActions>
 							</Card>
 
@@ -64,7 +64,7 @@ export default function BlogIntro() {
 								</CardContent>
 								<CardActions className='cdx' >
 									
-									<Button size="small" href="https://anubhavp.me/">Learn More</Button>
+									<Button size="small" href="#books">Learn More</Button>
 								</CardActions>
 							</Card>
 						</div>
@@ -87,7 +87,7 @@ export default function BlogIntro() {
 								</CardContent>
 								<CardActions className='cdx' >
 									
-									<Button size="small">Learn More</Button>
+									<Button size="small" href='#movies-music-tv' >Learn More</Button>
 								</CardActions>
 							</Card>
 

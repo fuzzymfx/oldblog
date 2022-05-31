@@ -2,7 +2,10 @@ import React, { useEffect } from 'react'
 import Nav from './Nav.md'
 import '../assets/css/nav.css'
 import hljs from 'highlight.js';
+import string from 'string'
+import markdownItAnchor from 'markdown-it-anchor'
 
+const slugify = s => string(s).slugify().toString()
 const md = require('markdown-it')({
 	html: true,
 	linkify: true,
@@ -19,7 +22,7 @@ const md = require('markdown-it')({
 
 		return null;
 	}
-});
+}).use(markdownItAnchor, { slugify });;
 
 async function parsemd(Nav) {
 	const response = await fetch(Nav)
