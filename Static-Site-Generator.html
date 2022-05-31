@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="description" content="Random shitpost on my daily drivers, chill outs & research thingys." />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="./manifest.json" />
+
     <title>Shitpost.IN</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./hljs.css">
@@ -87,7 +96,24 @@
 
                 Anubhab Patnaik
             </p>
-            <pre><code class="language-js"><span class="hljs-keyword">import</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;fs&#x27;</span>
+            <p>Static Site generator takes in files written in markdown and render htmls files. This blog, for example, has been written using this generator.<br>
+Libraries used:</p>
+<ul>
+<li><a href="https://www.npmjs.com/package/markdown-it">MarkdownIt</a> <em>Markdown parser done right.</em></li>
+<li><a href="https://www.npmjs.com/package/markdown-it-anchor">MarkdownItAnchor</a> <em>Header anchors for markdown-it.</em></li>
+<li><a href="https://www.npmjs.com/package/glob">Glob</a> <em>“Globs” are the patterns you type when you do stuff like ls .js on the command line, or put build/ in a .gitignore file.</em></li>
+<li><a href="https://www.npmjs.com/package/gray-matter">Gray-Matter</a> <em>Parse front-matter from a string or file.</em></li>
+<li><a href="https://npmjs.com/package/mkdirp">Mkdirp</a> <em>Create Dirs if they do not exist.</em>
+This is the code for the generator.js file that I have created.
+The code works in the following way:</li>
+</ul>
+<ol>
+<li><code>fs.readfile()</code> from fs reads all the files from the said directory and stores then in <code>filename</code> using <code>glob</code>.</li>
+<li><code>gray-matter</code> helps extracting text from the parsed files.</li>
+<li>The <code>main()</code> function then takes in one <code>filename</code> at a time and then parses it through <code>markdownit( ,{markdownitanchor})</code>.</li>
+<li>The converted html files are stored in the specified directories then using <code>mkdirp</code>.</li>
+</ol>
+<pre><code class="language-js"><span class="hljs-keyword">import</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;fs&#x27;</span>
 <span class="hljs-keyword">import</span> glob <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;glob&#x27;</span>
 <span class="hljs-keyword">import</span> matter <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;gray-matter&#x27;</span>
 <span class="hljs-keyword">import</span> marked <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;marked&#x27;</span>
