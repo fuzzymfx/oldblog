@@ -7,7 +7,7 @@
 1. [Firebase](http://anubhavp.me)
 1. [GoLang](http://anubhavp.me)
 1. [Flutter](http://anubhavp.me)
-1. [Static Site Generator](./generator.html)
+1. [Static Site Generator](./Static-Site-Generator.html)
 1. [Web3](./InfeasibleWeb3.html)
 ---
 ### Books
