@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import Nav from '../pages/Nav.md'
+import Nav from './Nav.md'
 import '../assets/css/nav.css'
 import hljs from 'highlight.js';
 
@@ -34,7 +34,7 @@ export default function Blog() {
 	useEffect(() => {
 		(async () => {
 			const renderedHTML = await parsemd(Nav)
-			console.log(renderedHTML)
+			// console.log(renderedHTML)
 			setHtml(renderedHTML)
 		})()
 	}, [])

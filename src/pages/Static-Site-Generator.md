@@ -3,6 +3,21 @@ title: Static Site Generator (SSG)
 author: Anubhab Patnaik
 date: May 29, 2022
 ---
+Static Site generator takes in files written in markdown and render htmls files. This blog, for example, has been written using this generator.  
+Libraries used:
+
+- [MarkdownIt](https://www.npmjs.com/package/markdown-it) *Markdown parser done right.*
+- [MarkdownItAnchor](https://www.npmjs.com/package/markdown-it-anchor) *Header anchors for markdown-it.*
+- [Glob](https://www.npmjs.com/package/glob) *"Globs" are the patterns you type when you do stuff like ls .js on the command line, or put build/ in a .gitignore file.*
+- [Gray-Matter](https://www.npmjs.com/package/gray-matter) *Parse front-matter from a string or file.*
+- [Mkdirp](https://npmjs.com/package/mkdirp) *Create Dirs if they do not exist.*
+This is the code for the generator.js file that I have created.
+The code works in the following way:
+
+1. `fs.readfile()` from fs reads all the files from the said directory and stores then in `filename` using `glob`.
+1. `gray-matter` helps extracting text from the parsed files.
+1. The `main()` function then takes in one `filename` at a time and then parses it through `markdownit( ,{markdownitanchor})`.
+1. The converted html files are stored in the specified directories then using `mkdirp`.
 
 ```js
 import fs from 'fs'
