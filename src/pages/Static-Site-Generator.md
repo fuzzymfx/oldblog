@@ -23,23 +23,50 @@ The code works in the following way:
 import fs from 'fs'
 import glob from 'glob'
 import matter from 'gray-matter'
-import marked from 'marked'
 import mkdirp from 'mkdirp'
 import path from 'path'
+import hljs from 'highlight.js';
+import MarkdownIt from 'markdown-it'
+import markdownItAnchor from 'markdown-it-anchor'
+import string from 'string'
+
+const slugify = s => string(s).slugify().toString()
+
+const md = MarkdownIt({
+    html: true,
+    linkify: true,
+    typographer: true,
+    highlight(str, language) {
+        if (language && hljs.getLanguage(language)) {
+            try {
+
+                return hljs.highlight(str, { language: language }).value;
+            } catch (err) {
+                console.log(err)
+            }
+        }
+
+        return null;
+    }
+}).use(markdownItAnchor, { slugify });
+
 
 const readFile = (filename) => {
     const rawFile = fs.readFileSync(filename, 'utf8')
     const parsed = matter(rawFile)
-    const html = marked(parsed.content)
+    const html = md.render(parsed.content)
+        // const html = marked(parsed.content)
+
 
     return {...parsed, html }
 }
 
-const templatize = (template, { date, title, content }) =>
+const templatize = (template, { date, title, content, author }) =>
     template
     .replace(/<!-- PUBLISH_DATE -->/g, date)
     .replace(/<!-- TITLE -->/g, title)
     .replace(/<!-- CONTENT -->/g, content)
+    .replace(/<!-- AUTHOR -->/g, author)
 
 const saveFile = (filename, contents) => {
     const dir = path.dirname(filename)
@@ -62,6 +89,7 @@ const processFile = (filename, template, outPath) => {
         date: file.data.date,
         title: file.data.title,
         content: file.html,
+        author: file.data.author,
     })
 
     saveFile(outfilename, templatized)

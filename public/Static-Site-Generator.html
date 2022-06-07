@@ -116,23 +116,50 @@ The code works in the following way:</li>
 <pre><code class="language-js"><span class="hljs-keyword">import</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;fs&#x27;</span>
 <span class="hljs-keyword">import</span> glob <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;glob&#x27;</span>
 <span class="hljs-keyword">import</span> matter <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;gray-matter&#x27;</span>
-<span class="hljs-keyword">import</span> marked <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;marked&#x27;</span>
 <span class="hljs-keyword">import</span> mkdirp <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;mkdirp&#x27;</span>
 <span class="hljs-keyword">import</span> path <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;path&#x27;</span>
+<span class="hljs-keyword">import</span> hljs <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;highlight.js&#x27;</span>;
+<span class="hljs-keyword">import</span> <span class="hljs-title class_">MarkdownIt</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;markdown-it&#x27;</span>
+<span class="hljs-keyword">import</span> markdownItAnchor <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;markdown-it-anchor&#x27;</span>
+<span class="hljs-keyword">import</span> string <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;string&#x27;</span>
+
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">slugify</span> = s =&gt; <span class="hljs-title function_">string</span>(s).<span class="hljs-title function_">slugify</span>().<span class="hljs-title function_">toString</span>()
+
+<span class="hljs-keyword">const</span> md = <span class="hljs-title class_">MarkdownIt</span>({
+    <span class="hljs-attr">html</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">linkify</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-attr">typographer</span>: <span class="hljs-literal">true</span>,
+    <span class="hljs-title function_">highlight</span>(<span class="hljs-params">str, language</span>) {
+        <span class="hljs-keyword">if</span> (language &amp;&amp; hljs.<span class="hljs-title function_">getLanguage</span>(language)) {
+            <span class="hljs-keyword">try</span> {
+
+                <span class="hljs-keyword">return</span> hljs.<span class="hljs-title function_">highlight</span>(str, { <span class="hljs-attr">language</span>: language }).<span class="hljs-property">value</span>;
+            } <span class="hljs-keyword">catch</span> (err) {
+                <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(err)
+            }
+        }
+
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
+    }
+}).<span class="hljs-title function_">use</span>(markdownItAnchor, { slugify });
+
 
 <span class="hljs-keyword">const</span> <span class="hljs-title function_">readFile</span> = (<span class="hljs-params">filename</span>) =&gt; {
     <span class="hljs-keyword">const</span> rawFile = fs.<span class="hljs-title function_">readFileSync</span>(filename, <span class="hljs-string">&#x27;utf8&#x27;</span>)
     <span class="hljs-keyword">const</span> parsed = <span class="hljs-title function_">matter</span>(rawFile)
-    <span class="hljs-keyword">const</span> html = <span class="hljs-title function_">marked</span>(parsed.<span class="hljs-property">content</span>)
+    <span class="hljs-keyword">const</span> html = md.<span class="hljs-title function_">render</span>(parsed.<span class="hljs-property">content</span>)
+        <span class="hljs-comment">// const html = marked(parsed.content)</span>
+
 
     <span class="hljs-keyword">return</span> {...parsed, html }
 }
 
-<span class="hljs-keyword">const</span> <span class="hljs-title function_">templatize</span> = (<span class="hljs-params">template, { date, title, content }</span>) =&gt;
+<span class="hljs-keyword">const</span> <span class="hljs-title function_">templatize</span> = (<span class="hljs-params">template, { date, title, content, author }</span>) =&gt;
     template
     .<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/&lt;!-- PUBLISH_DATE --&gt;/g</span>, date)
     .<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/&lt;!-- TITLE --&gt;/g</span>, title)
     .<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/&lt;!-- CONTENT --&gt;/g</span>, content)
+    .<span class="hljs-title function_">replace</span>(<span class="hljs-regexp">/&lt;!-- AUTHOR --&gt;/g</span>, author)
 
 <span class="hljs-keyword">const</span> <span class="hljs-title function_">saveFile</span> = (<span class="hljs-params">filename, contents</span>) =&gt; {
     <span class="hljs-keyword">const</span> dir = path.<span class="hljs-title function_">dirname</span>(filename)
@@ -155,6 +182,7 @@ The code works in the following way:</li>
         <span class="hljs-attr">date</span>: file.<span class="hljs-property">data</span>.<span class="hljs-property">date</span>,
         <span class="hljs-attr">title</span>: file.<span class="hljs-property">data</span>.<span class="hljs-property">title</span>,
         <span class="hljs-attr">content</span>: file.<span class="hljs-property">html</span>,
+        <span class="hljs-attr">author</span>: file.<span class="hljs-property">data</span>.<span class="hljs-property">author</span>,
     })
 
     <span class="hljs-title function_">saveFile</span>(outfilename, templatized)

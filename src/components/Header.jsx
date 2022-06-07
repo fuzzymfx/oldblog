@@ -20,7 +20,7 @@ export default function Header() {
           >
           </Nav>
           <Nav>
-            <Nav.Link href="https://github.com/codebotx">Github</Nav.Link>
+            <Nav.Link href="https://instagram.com/anubhavclicks">Instagram</Nav.Link>
             <Nav.Link href="https://www.linkedin.com/in/anubhabpatnaik0530/">LinkedIn</Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
               HitMeUp!
