@@ -1,3 +1,9 @@
+---
+title: cbrtl- An opensource community :)
+author: Srijan Paul
+date: June 13, 2022
+---
+
 # What is cbrtl?
 
 **cbrtl** is an attempt at creating a tight knit group of programmers who like making fun
