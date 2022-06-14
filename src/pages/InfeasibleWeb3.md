@@ -35,7 +35,7 @@ This post is my attempt at shedding some light on the problems that I'm aware of
 
 ## Social
 
-### The majority of crypto is shady, even for artists {#the-majority-of-crypto-is-shady-even-for-artists}
+### The majority of crypto is shady, even for artists
 
 Cryptocurrency is always found in a massive web of controversy, frauds and scams.
 Show me one successful crypto project that has served a real purpose,
