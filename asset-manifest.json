@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/blog/static/css/main.6807faa4.css",
-    "main.js": "/blog/static/js/main.360721e9.js",
+    "main.js": "/blog/static/js/main.ed399c3d.js",
     "static/media/a1.jpeg": "/blog/static/media/a1.0471aafae6465ba891b6.jpeg",
     "static/media/roboto-all-500-normal.woff": "/blog/static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
     "static/media/roboto-all-700-normal.woff": "/blog/static/media/roboto-all-700-normal.a457fde362a540fcadff.woff",
     "static/media/roboto-all-400-normal.woff": "/blog/static/media/roboto-all-400-normal.c5d001fa922fa66a147f.woff",
     "static/media/roboto-all-300-normal.woff": "/blog/static/media/roboto-all-300-normal.168d6383e73339293ac3.woff",
+    "static/media/office.svg": "/blog/static/media/office.8f117eb207e57ed8f89d67d595aceb45.svg",
     "static/media/movie.svg": "/blog/static/media/movie.79a961f7bb9e3781ef6704c54e9ac9c5.svg",
     "static/media/react.svg": "/blog/static/media/react.0960bd7ea577f3d0f49d260a7e410905.svg",
-    "static/media/undraw_programming_2svr.svg": "/blog/static/media/undraw_programming_2svr.a903c62cdd3855a43af5b450405fd9b2.svg",
+    "static/media/undraw_programming_2svr.svg": "/blog/static/media/undraw_programming_2svr.aeef006e4af286ca1faad1408d843e40.svg",
     "static/media/roboto-latin-500-normal.woff2": "/blog/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/blog/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/blog/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
@@ -40,12 +41,12 @@
     "static/media/roboto-greek-ext-300-normal.woff2": "/blog/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/blog/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/blog/index.html",
-    "static/media/Nav.md": "/blog/static/media/Nav.c913130e4f5089594280.md",
+    "static/media/Nav.md": "/blog/static/media/Nav.7c14e872985357f324de.md",
     "main.6807faa4.css.map": "/blog/static/css/main.6807faa4.css.map",
-    "main.360721e9.js.map": "/blog/static/js/main.360721e9.js.map"
+    "main.ed399c3d.js.map": "/blog/static/js/main.ed399c3d.js.map"
   },
   "entrypoints": [
     "static/css/main.6807faa4.css",
-    "static/js/main.360721e9.js"
+    "static/js/main.ed399c3d.js"
   ]
 }
