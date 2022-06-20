@@ -9,7 +9,7 @@
 1. [Flutter](http://anubhavp.me)
 1. [Static Site Generator](./Static-Site-Generator.html)
 1. [Why is Web3 not feasible?](./InfeasibleWeb3.html)
-1. [cbrtl- An opensource community](./cbrtl.html)
+
 ---
 ### Books
 

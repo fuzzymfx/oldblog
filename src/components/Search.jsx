@@ -8,11 +8,11 @@ import SearchIcon from '@mui/icons-material/Search';
 export default function Search() {
   return (
     <Paper style={{
-			borderRadius: '20px',
+			borderRadius: '10px',
 			padding: '2px 10px',
 			display: 'flex',
 			alignItems: 'center',
-			width: '60%',
+			width: '68%',
 			margin: '0 auto',
 			marginTop: '10px',
 			marginBottom: '10px',
