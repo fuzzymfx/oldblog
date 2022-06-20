@@ -12,7 +12,7 @@ export default function Dashboard() {
 						<div className="img-home">
 							<h1>SHITPOST<span className="text-secondary">.IN</span> </h1>
 							<p className="lead my-4">
-								Hi I am Anubhav , a CS undergrad pursuing software engineering who likes to break and build things ;) Besides that I love music, watch a lot of TV, read, eat and drink a lot. I like photography and I am trying to learn how to do it properly.
+								Hi I am Anubhav , a CS undergrad pursuing software engineering who likes to break and build things ;) Besides that I love music, watch a lot of TV, read, eat and drink a lot. I like photography and playing guitar, and I am trying to learn how to do them properly.
 							</p>
 							<p className="lead my-4">
 								Here I random shitpost on my daily drivers, chill outs & research thingys.
