@@ -1,15 +1,11 @@
 import * as React from 'react';
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
-import Divider from '@mui/material/Divider';
-import IconButton from '@mui/material/IconButton';
-import SearchIcon from '@mui/icons-material/Search';
-
 export default function Search() {
   return (
     <Paper style={{
 			borderRadius: '13px',
-			padding: '2px 10px',
+			padding: '4px 10px',
 			display: 'flex',
 			alignItems: 'center',
 			width: '60%',
@@ -34,12 +30,7 @@ export default function Search() {
 					textColor: '#565656',
 					flex: 1,
 				}}
-			/>
-			<Divider style={{ width: 1, height: 28, margin: 4 }} />
-			<IconButton aria-label="search" style={{ color: '#6c63ff'}}>
-				<SearchIcon />
-			</IconButton>
-		
+			/>		
 		</Paper>
 	);
 }
