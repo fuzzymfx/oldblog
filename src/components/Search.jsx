@@ -3,12 +3,7 @@ import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import search from '../assets/search.json';
 
-// console.log(searchdata('Anubhab'));
-// console.log(search.jsondata);
-// const searcharray = JSON.parse(search)
-// console.log(searcharray);
-
-async function searchdata(searchquery) {
+async function searchdata(searchquery, search) {
 	for (var key in search.key) {
 		if (await (search.jsondata[key].name) === searchquery) {
 			console.log(search.jsondata[key]);
@@ -92,7 +87,7 @@ export default function Search() {
 				placeholder="Search…"
 				inputProps={{ 'aria-label': 'search blogs' }}
 				value={query}
-				onChange={(e) => setQuery(e.target.value) & setResults(searchdata(query)) & console.log(results) & displaySearch(results)}
+				onChange={(e) => setQuery(e.target.value) & setResults(searchdata(query, search)) & console.log(results) & displaySearch(results)}
 
 				style={{
 					marginLeft: '10px',
