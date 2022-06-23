@@ -6,7 +6,7 @@ export default function Footer() {
 			<footer id='footer'>
 
 				<div className=" py-3 mx-1 " style={{ textAlign: 'center' }}>
-					<div className='icons' >
+					<div className='icons my-1' >
 
 						<a href="http://github.com/codebotx" className="  p-2 text-decoration-none text-secondary ">
 							<i className="bi bi-github"></i>
