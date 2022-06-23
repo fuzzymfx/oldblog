@@ -5,18 +5,15 @@ import search from '../assets/search.json';
 import { Card } from '@mui/material';
 import { CardContent } from '@mui/material';
 import { Typography } from '@mui/material';
-import Button from '@mui/material/Button';
-import CardActions from '@mui/material/CardActions';
-
+import '../assets/css/nav.css'
 
 async function searchdata(searchquery, json) {
 	// console.log(json.length);
 	var key = 0;
 	var results = [];
-
 	for (key in json) {
 		if (json[key]["Content"].toLowerCase().includes(searchquery.toLowerCase())) {
-			results.push(json[key]["Link"]);
+			results.push([json[key]["Title"], json[key]["Link"]]);
 			// console.log(json[key]["Link"]);
 		}
 
@@ -37,17 +34,17 @@ function DisplaySearch(props) {
 		});
 
 		return (
-			<div className="row justify-content-center mx-1" >
-				<Card sx={{ minWidth: 275, maxWidth:275, textAlign:'center' }}>
+			<div className="row justify-content-center mx-1" style={{ textAlign:'center'}} >
+				
 				{arr.map((prop) => (
 					<CardContent>
-						<Typography variant="body2">
-							<a href={prop}>Here's the link</a>
-						</Typography>
+						<div style={{ textDecoration: 'none'}} className="markdown-body">
+							<a href={prop[1]}>{prop[0]}</a>
+						</div>
 						</CardContent>
 				)
 				)}
-				</Card>
+				
 				</div>
 		);
 

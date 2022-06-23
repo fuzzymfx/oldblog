@@ -1,5 +1,4 @@
 import React from 'react'
-import undraw_programming_2svr from '../assets/img/undraw_programming_2svr.svg'
 import office from '../assets/img/office.svg'
 
 export default function Dashboard() {
