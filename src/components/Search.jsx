@@ -3,17 +3,22 @@ import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
 import search from '../assets/search.json';
 
-async function searchdata(searchquery, search) {
-	for (var key in search.key) {
-		if (await (search.jsondata[key].name) === searchquery) {
-			console.log(search.jsondata[key]);
-			return search.jsondata[key];
+async function searchdata(searchquery, json) {
+	// console.log(json[0]);
+	// console.log(json[0]["Content"]);
+	var key =0;
+
+	for (key in json) {
+		if (json[key]["Content"] === searchquery) {
+			console.log(json[key]["Link"]);
 		}
+		key++;
+		
 	}
 }
 
 
-function displaySearch( results) {
+function displaySearch(results) {
 	if (results.length > 0) {
 		return (
 			<Paper style={{
@@ -59,10 +64,19 @@ function displaySearch( results) {
 }
 
 export default function Search() {
-	const [query, setQuery] = useState('');
-	const [results, setResults] = useState([]);
 
-	// searchdata(query);
+	const [results, setResults] = useState([]);
+	const handleChange = (e) => {
+		searchdata(e.target.value, search).then((result) => {
+			setResults(result);
+		}
+			, [results]);
+
+			// displaySearch(results);
+			console.log("This is query from outside return " + e.target.value);
+			console.log("This is query from outside return " + results);
+			}
+
 	return (
 		<Paper style={{
 			borderRadius: '13px',
@@ -86,8 +100,8 @@ export default function Search() {
 			<InputBase
 				placeholder="Search…"
 				inputProps={{ 'aria-label': 'search blogs' }}
-				value={query}
-				onChange={(e) => setQuery(e.target.value) & setResults(searchdata(query, search)) & console.log(results) & displaySearch(results)}
+				// value={query}
+				onChange={(e) => handleChange(e)}
 
 				style={{
 					marginLeft: '10px',
