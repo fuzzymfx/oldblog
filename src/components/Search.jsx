@@ -1,7 +1,25 @@
-import * as React from 'react';
+import React, {useState} from 'react';
 import Paper from '@mui/material/Paper';
 import InputBase from '@mui/material/InputBase';
-export default function Search() {
+import search from '../assets/search.json';
+
+// console.log(searchdata('Anubhab'));
+// console.log(search.key);
+
+async function searchdata(searchquery) {
+	for (var key in search.key) {
+		if (await (search.jsondata[key].name ) === searchquery) {
+			console.log(search.jsondata[key]);
+			return search.jsondata[key];
+		}
+	}
+}
+
+export default function Search() {	
+	const [query, setQuery] = useState('');
+	const [results, setResults] = useState([]);
+	
+	// searchdata(query);
   return (
     <Paper style={{
 			borderRadius: '13px',
@@ -25,6 +43,9 @@ export default function Search() {
 			<InputBase
 				placeholder="Search…"
 				inputProps={{ 'aria-label': 'search blogs' }}
+				value={query}
+				onChange={(e) => setQuery(e.target.value) & console.log(searchdata(e.target.value))}
+				
 				style={{
 					marginLeft: '10px',
 					textColor: '#565656',
