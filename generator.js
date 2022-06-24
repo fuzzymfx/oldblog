@@ -8,6 +8,7 @@ import MarkdownIt from 'markdown-it'
 import markdownItAnchor from 'markdown-it-anchor'
 import string from 'string'
 
+
 const slugify = s => string(s).slugify().toString()
 
 const md = MarkdownIt({
@@ -73,15 +74,31 @@ const processFile = (filename, template, outPath) => {
     saveFile(outfilename, templatized)
     console.log(`📝 ${outfilename}`)
 }
+const JSONify = (arr, filename, jsonpath) => {
+    // var arrJ = fs.readFileSync(path.resolve(jsonpath, 'search.json'), 'utf8')
+    const file = readFile(filename)
+    const json = JSON.stringify(file.data)
+    arr.push(json)
+    console.log(json, arr)
+    fs.appendFileSync(path.resolve(jsonpath, 'search.json'), arr, 'utf8')
+        // return arr
+
+}
+
 
 const main = () => {
     const srcPath = path.resolve('src')
     const outPath = path.resolve('public')
     const template = fs.readFileSync(path.join(srcPath, 'template.html'), 'utf8')
     const filenames = glob.sync(srcPath + '/pages/**/*.md')
+    const jsonpath = path.resolve('src/assets/')
+    const arr = []
+
 
     filenames.forEach((filename) => {
-        processFile(filename, template, outPath)
+        // processFile(filename, template, outPath)        
+        // fs.appendFileSync(path.resolve(jsonpath, 'search.json'), JSONify(arr, filename, jsonpath))
+        JSONify(arr, filename, jsonpath)
     })
 }
 
