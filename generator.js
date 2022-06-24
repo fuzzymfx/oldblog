@@ -34,8 +34,6 @@ const readFile = (filename) => {
     const rawFile = fs.readFileSync(filename, 'utf8')
     const parsed = matter(rawFile)
     const html = md.render(parsed.content)
-        // const html = marked(parsed.content)
-
 
     return {...parsed, html }
 }
@@ -75,13 +73,14 @@ const processFile = (filename, template, outPath) => {
     console.log(`📝 ${outfilename}`)
 }
 const JSONify = (arr, filename, jsonpath) => {
-    // var arrJ = fs.readFileSync(path.resolve(jsonpath, 'search.json'), 'utf8')
     const file = readFile(filename)
-    const json = JSON.stringify(file.data)
-    arr.push(json)
-    console.log(json, arr)
-    fs.appendFileSync(path.resolve(jsonpath, 'search.json'), arr, 'utf8')
-        // return arr
+    const outfilename = getOutputFilename(filename, '')
+    console.log(outfilename)
+    file.data.link = "https://anubhavp.me/blog/" + outfilename
+    file.data.content = file.html
+    arr.push(file.data)
+    var json = JSON.stringify(arr);
+    fs.writeFileSync(path.resolve(jsonpath, 'search.json'), json, 'utf8');
 
 }
 
@@ -94,11 +93,10 @@ const main = () => {
     const jsonpath = path.resolve('src/assets/')
     const arr = []
 
-
     filenames.forEach((filename) => {
-        // processFile(filename, template, outPath)        
-        // fs.appendFileSync(path.resolve(jsonpath, 'search.json'), JSONify(arr, filename, jsonpath))
+        processFile(filename, template, outPath)
         JSONify(arr, filename, jsonpath)
+
     })
 }
 

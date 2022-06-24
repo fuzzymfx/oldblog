@@ -12,8 +12,8 @@ async function searchdata(searchquery, json) {
 	var key = 0;
 	var results = [];
 	for (key in json) {
-		if (json[key]["Content"].toLowerCase().includes(searchquery.toLowerCase())) {
-			results.push([json[key]["Title"], json[key]["Link"]]);
+		if (json[key]["content"].toLowerCase().includes(searchquery.toLowerCase())) {
+			results.push([json[key]["title"], json[key]["link"]]);
 			// console.log(json[key]["Link"]);
 		}
 
