@@ -7,7 +7,7 @@
 1. [Firebase](http://anubhavp.me)
 1. [GoLang](http://anubhavp.me)
 1. [Flutter](http://anubhavp.me)
-1. [Static Site Generator](./Static-Site-Generator.html)
+1. [Zuzu: Static Site Generator](./zuzu.html)
 1. [Why is Web3 not feasible?](./InfeasibleWeb3.html)
 
 ---

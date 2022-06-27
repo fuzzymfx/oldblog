@@ -1,17 +1,62 @@
 ---
-title: Static Site Generator (SSG)
+title: 'zuzu: A Static Site Generator (SSG)'
 author: Anubhab Patnaik
 date: May 29, 2022
 ---
-Static Site generator takes in files written in markdown and render htmls files. This blog, for example, has been written using this generator.  
-Libraries used:
+Zuzu is a static site generator that takes in markdown files and render htmls pages. [This blog](https://anubhavp.me/blog), for example, has been written using this generator. This enables noobs like me to write blogs without having to learn a lot of code! It is a very simple and easy to use generator. All you need to do is to write a markdown file and it will be rendered as a page ;) You can create a new page by creating a new markdown file.  
+
+- [How Does it work](#how-does-it-work)
+  - [Create a markdown file.](#create-a-markdown-file)
+  - [Run the generator and find your blog.](#run-the-generator-and-find-your-blog)
+- [The Static Site Generator](#the-static-site-generator)
+  - [Libraries Used](#libraries-used)
+  - [Generator Code.](#generator-code)
+
+### How does it work?
+
+Zuzu parses the markdown file using *javascript* and renders it as *html documents*. It then saves the html files in the `public` folder. The public folder, with `index.html` file, is the final output of the generator. 
+
+#### 1. Create a markdown file
+
+    # This is a title
+    This is a paragraph
+    This is another paragraph
+    This is a list:
+    * Item 1
+    * Item 2
+    * Item 3
+    This is a code block:
+    ```
+    print("Hello World")
+    ```
+    This is a table:
+    | Column 1 | Column 2 | Column 3 |
+    | -------- | -------- | -------- |
+    | 1        | 2        | 3        |
+    | 4        | 5        | 6        |
+    | 7        | 8        | 9        |
+    This is a link: [zuzu](https://anubhavp.me/blog/zuzu.html)
+
+
+#### 2. Run the generator and find your blog
+
+`npm run generate`
+You'll now find your pages in the public folder! Run the index.html file in your browser to see your blog. You may now deploy your site 
+to a server.
+
+### The Static Site Generator
+
+#### 1. Libraries used:
 
 - [MarkdownIt](https://www.npmjs.com/package/markdown-it) *Markdown parser done right.*
 - [MarkdownItAnchor](https://www.npmjs.com/package/markdown-it-anchor) *Header anchors for markdown-it.*
 - [Glob](https://www.npmjs.com/package/glob) *"Globs" are the patterns you type when you do stuff like ls .js on the command line, or put build/ in a .gitignore file.*
 - [Gray-Matter](https://www.npmjs.com/package/gray-matter) *Parse front-matter from a string or file.*
 - [Mkdirp](https://npmjs.com/package/mkdirp) *Create Dirs if they do not exist.*
-This is the code for the generator.js file that I have created.
+
+#### 2. Generator Code:
+
+This is the code for the generator.js.
 The code works in the following way:
 
 1. `fs.readfile()` from fs reads all the files from the said directory and stores then in `filename` using `glob`.
@@ -20,6 +65,7 @@ The code works in the following way:
 1. The converted html files are stored in the specified directories then using `mkdirp`.
 
 ```js
+
 import fs from 'fs'
 import glob from 'glob'
 import matter from 'gray-matter'
@@ -31,6 +77,7 @@ import markdownItAnchor from 'markdown-it-anchor'
 import string from 'string'
 
 const slugify = s => string(s).slugify().toString()
+
 
 const md = MarkdownIt({
     html: true,
@@ -55,8 +102,6 @@ const readFile = (filename) => {
     const rawFile = fs.readFileSync(filename, 'utf8')
     const parsed = matter(rawFile)
     const html = md.render(parsed.content)
-        // const html = marked(parsed.content)
-
 
     return {...parsed, html }
 }
@@ -97,10 +142,10 @@ const processFile = (filename, template, outPath) => {
 }
 
 const main = () => {
-    const srcPath = path.resolve('src')
+    const srcPath = path.resolve('content')
     const outPath = path.resolve('public')
-    const template = fs.readFileSync(path.join(srcPath, 'template.html'), 'utf8')
-    const filenames = glob.sync(srcPath + '/pages/**/*.md')
+    const template = fs.readFileSync('./templates/initial/template.html', 'utf8')
+    const filenames = glob.sync(srcPath + '/**/*.md')
 
     filenames.forEach((filename) => {
         processFile(filename, template, outPath)
@@ -108,4 +153,5 @@ const main = () => {
 }
 
 main()
+
 ```
