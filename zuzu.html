@@ -56,64 +56,108 @@
 </head>
 
 <body class="markdown-body">
-    <div class="container nav">
-        <div class="row flex">
-            <div class="col-md-12">
-                <div>
-                    <span>
+    <div class="main">
+        <div class="container nav">
+            <div class="row flex">
+                <div class="col-md-12">
+                    <div>
+                        <span>
                         <a href="./index.html">Home</a>
                     </span>
-                    <span>
+                        <span>
                         <a href="https://anubhavp.me">Profile</a>
                     </span>
-                    <span>
+                        <span>
                         <a href="https://github.com/codebotx">GitHub</a>
                     </span>
 
+                    </div>
+                </div>
+                <div>
+                    <a href="mailto:anubhabr50@gmail.com">Contact Me</a>
                 </div>
             </div>
-            <div>
-                <a href="mailto:anubhabr50@gmail.com">Contact Me</a>
-            </div>
-        </div>
-    </div>
-    <div>
-        <h3 style="font-size: 70px; padding-left: 10px;">
-            Shitpost.IN
-        </h3>
-    </div>
-    <div class="md">
-        <div class="head">
-            <h1>
-                Static Site Generator (SSG)
-            </h1>
-            <p class="dt">
-                May 29, 2022
-            </p>
         </div>
         <div>
-            <p class='auth'>
+            <h3 style="font-size: 70px; padding-left: 10px;">
+                Shitpost.IN
+            </h3>
+        </div>
+        <div class="md">
+            <div class="head">
+                <h1>
+                    zuzu: A Static Site Generator (SSG)
+                </h1>
+                <p class="dt">
+                    May 29, 2022
+                </p>
+            </div>
+            <div>
+                <p class='auth'>
 
-                Anubhab Patnaik
-            </p>
-            <p>Static Site generator takes in files written in markdown and render htmls files. This blog, for example, has been written using this generator.<br>
-Libraries used:</p>
+                    Anubhab Patnaik
+                </p>
+                <p>Zuzu is a static site generator that takes in markdown files and render htmls pages. <a href="https://anubhavp.me/blog">This blog</a>, for example, has been written using this generator. This enables noobs like me to write blogs without having to learn a lot of code! It is a very simple and easy to use generator. All you need to do is to write a markdown file and it will be rendered as a page ;) You can create a new page by creating a new markdown file.</p>
+<ul>
+<li><a href="#how-does-it-work">How Does it work</a>
+<ul>
+<li><a href="#create-a-markdown-file">Create a markdown file.</a></li>
+<li><a href="#run-the-generator-and-find-your-blog">Run the generator and find your blog.</a></li>
+</ul>
+</li>
+<li><a href="#the-static-site-generator">The Static Site Generator</a>
+<ul>
+<li><a href="#libraries-used">Libraries Used</a></li>
+<li><a href="#generator-code">Generator Code.</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="how-does-it-work" tabindex="-1">How does it work?</h3>
+<p>Zuzu parses the markdown file using <em>javascript</em> and renders it as <em>html documents</em>. It then saves the html files in the <code>public</code> folder. The public folder, with <code>index.html</code> file, is the final output of the generator.</p>
+<h4 id="1-create-a-markdown-file" tabindex="-1">1. Create a markdown file</h4>
+<pre><code># This is a title
+This is a paragraph
+This is another paragraph
+This is a list:
+* Item 1
+* Item 2
+* Item 3
+This is a code block:
+```
+print(&quot;Hello World&quot;)
+```
+This is a table:
+| Column 1 | Column 2 | Column 3 |
+| -------- | -------- | -------- |
+| 1        | 2        | 3        |
+| 4        | 5        | 6        |
+| 7        | 8        | 9        |
+This is a link: [zuzu](https://anubhavp.me/blog/zuzu.html)
+</code></pre>
+<h4 id="2-run-the-generator-and-find-your-blog" tabindex="-1">2. Run the generator and find your blog</h4>
+<p><code>npm run generate</code>
+You’ll now find your pages in the public folder! Run the index.html file in your browser to see your blog. You may now deploy your site
+to a server.</p>
+<h3 id="the-static-site-generator" tabindex="-1">The Static Site Generator</h3>
+<h4 id="1-libraries-used" tabindex="-1">1. Libraries used:</h4>
 <ul>
 <li><a href="https://www.npmjs.com/package/markdown-it">MarkdownIt</a> <em>Markdown parser done right.</em></li>
 <li><a href="https://www.npmjs.com/package/markdown-it-anchor">MarkdownItAnchor</a> <em>Header anchors for markdown-it.</em></li>
 <li><a href="https://www.npmjs.com/package/glob">Glob</a> <em>“Globs” are the patterns you type when you do stuff like ls .js on the command line, or put build/ in a .gitignore file.</em></li>
 <li><a href="https://www.npmjs.com/package/gray-matter">Gray-Matter</a> <em>Parse front-matter from a string or file.</em></li>
-<li><a href="https://npmjs.com/package/mkdirp">Mkdirp</a> <em>Create Dirs if they do not exist.</em>
-This is the code for the generator.js file that I have created.
-The code works in the following way:</li>
+<li><a href="https://npmjs.com/package/mkdirp">Mkdirp</a> <em>Create Dirs if they do not exist.</em></li>
 </ul>
+<h4 id="2-generator-code" tabindex="-1">2. Generator Code:</h4>
+<p>This is the code for the generator.js.
+The code works in the following way:</p>
 <ol>
 <li><code>fs.readfile()</code> from fs reads all the files from the said directory and stores then in <code>filename</code> using <code>glob</code>.</li>
 <li><code>gray-matter</code> helps extracting text from the parsed files.</li>
 <li>The <code>main()</code> function then takes in one <code>filename</code> at a time and then parses it through <code>markdownit( ,{markdownitanchor})</code>.</li>
 <li>The converted html files are stored in the specified directories then using <code>mkdirp</code>.</li>
 </ol>
-<pre><code class="language-js"><span class="hljs-keyword">import</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;fs&#x27;</span>
+<pre><code class="language-js">
+<span class="hljs-keyword">import</span> fs <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;fs&#x27;</span>
 <span class="hljs-keyword">import</span> glob <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;glob&#x27;</span>
 <span class="hljs-keyword">import</span> matter <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;gray-matter&#x27;</span>
 <span class="hljs-keyword">import</span> mkdirp <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;mkdirp&#x27;</span>
@@ -124,6 +168,7 @@ The code works in the following way:</li>
 <span class="hljs-keyword">import</span> string <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;string&#x27;</span>
 
 <span class="hljs-keyword">const</span> <span class="hljs-title function_">slugify</span> = s =&gt; <span class="hljs-title function_">string</span>(s).<span class="hljs-title function_">slugify</span>().<span class="hljs-title function_">toString</span>()
+
 
 <span class="hljs-keyword">const</span> md = <span class="hljs-title class_">MarkdownIt</span>({
     <span class="hljs-attr">html</span>: <span class="hljs-literal">true</span>,
@@ -148,8 +193,6 @@ The code works in the following way:</li>
     <span class="hljs-keyword">const</span> rawFile = fs.<span class="hljs-title function_">readFileSync</span>(filename, <span class="hljs-string">&#x27;utf8&#x27;</span>)
     <span class="hljs-keyword">const</span> parsed = <span class="hljs-title function_">matter</span>(rawFile)
     <span class="hljs-keyword">const</span> html = md.<span class="hljs-title function_">render</span>(parsed.<span class="hljs-property">content</span>)
-        <span class="hljs-comment">// const html = marked(parsed.content)</span>
-
 
     <span class="hljs-keyword">return</span> {...parsed, html }
 }
@@ -190,10 +233,10 @@ The code works in the following way:</li>
 }
 
 <span class="hljs-keyword">const</span> <span class="hljs-title function_">main</span> = (<span class="hljs-params"></span>) =&gt; {
-    <span class="hljs-keyword">const</span> srcPath = path.<span class="hljs-title function_">resolve</span>(<span class="hljs-string">&#x27;src&#x27;</span>)
+    <span class="hljs-keyword">const</span> srcPath = path.<span class="hljs-title function_">resolve</span>(<span class="hljs-string">&#x27;content&#x27;</span>)
     <span class="hljs-keyword">const</span> outPath = path.<span class="hljs-title function_">resolve</span>(<span class="hljs-string">&#x27;public&#x27;</span>)
-    <span class="hljs-keyword">const</span> template = fs.<span class="hljs-title function_">readFileSync</span>(path.<span class="hljs-title function_">join</span>(srcPath, <span class="hljs-string">&#x27;template.html&#x27;</span>), <span class="hljs-string">&#x27;utf8&#x27;</span>)
-    <span class="hljs-keyword">const</span> filenames = glob.<span class="hljs-title function_">sync</span>(srcPath + <span class="hljs-string">&#x27;/pages/**/*.md&#x27;</span>)
+    <span class="hljs-keyword">const</span> template = fs.<span class="hljs-title function_">readFileSync</span>(<span class="hljs-string">&#x27;./templates/initial/template.html&#x27;</span>, <span class="hljs-string">&#x27;utf8&#x27;</span>)
+    <span class="hljs-keyword">const</span> filenames = glob.<span class="hljs-title function_">sync</span>(srcPath + <span class="hljs-string">&#x27;/**/*.md&#x27;</span>)
 
     filenames.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">filename</span>) =&gt;</span> {
         <span class="hljs-title function_">processFile</span>(filename, template, outPath)
@@ -201,13 +244,15 @@ The code works in the following way:</li>
 }
 
 <span class="hljs-title function_">main</span>()
+
 </code></pre>
 
+            </div>
         </div>
+
+
+
     </div>
-
-
-
 </body>
 
 </html>
