@@ -3,15 +3,13 @@
 
 ### Tech
 
-1. [React](./react.html)
-1. [Firebase](http://anubhavp.me)
-1. [GoLang](http://anubhavp.me)
-1. [Flutter](http://anubhavp.me)
 1. [Zuzu: A Static Site Generator](./zuzu.html)
 1. [Why is Web3 not feasible?](./InfeasibleWeb3.html)
 
 ---
 ### Books
+
+*Coming Soon*
 
 1. [The Hobbit](http://anubhavp.me)
 1. [Harry Potter](http://anubhavp.me)
@@ -19,6 +17,8 @@
 
 ---
 ### Movies/ Music & Tv
+
+*Coming Soon*
 
 1. [Stranger Things](http://anubhavp.me)
 1. [Sex Education](http://anubhavp.me)
