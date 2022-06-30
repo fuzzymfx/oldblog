@@ -12,7 +12,6 @@
         --foot-text-color: black;
         --scroll-bar-color: hsl(var(--hue-color), 12%, 100%);
         --scroll-thumb-color: hsl(var(--hue-color), 12%, 90%);
-        --text-color-light: hsl(var(--hue-color), 8%, 65%);
     }
 }
 
@@ -31,7 +30,7 @@
         --card--head: #FFFFFF;
         --dash--bg: #0d1117;
         --foot-text-color: #ffffff;
-        --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+        --scroll-bar-color: #0d1117;
         --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
     }
 }
