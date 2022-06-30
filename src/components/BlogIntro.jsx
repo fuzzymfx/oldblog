@@ -11,23 +11,8 @@ import Typography from '@mui/material/Typography';
 import read from '../assets/img/read.svg';
 import react from '../assets/img/react.svg';
 import movie from '../assets/img/movie.svg';
-import ScrollReveal from 'scrollreveal'
 
 export default function BlogIntro() {
-
-const srr = ScrollReveal({
-    origin: 'top',
-    distance: '6px',
-    duration: 2000
-        // reset: true
-})
-	React.useEffect(() => {
-		srr.reveal('.head', {
-			delay: 200,
-			
-		})
-		}, [srr]);
-
 	return (
 		<div style={{ width: '100%' }}>
 			<h1 className="mx-5 head" id='intro' style={{ textAlign: 'center', fontSize: '100px', fontFamily: 'Smooch' }}>
