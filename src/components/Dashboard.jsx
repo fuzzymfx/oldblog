@@ -1,7 +1,21 @@
 import React from 'react'
 import office from '../assets/img/office.svg'
+import ScrollReveal from 'scrollreveal'
 
 export default function Dashboard() {
+
+const srr = ScrollReveal({
+    origin: 'top',
+    distance: '6px',
+    duration: 2000
+        // reset: true
+})
+	React.useEffect(() => {
+		srr.reveal('.cdin',{
+			delay: 200,
+			
+		})
+		}, [srr]);
 	return (
 		<>
 			<section className="text-light p-5 cdin ">

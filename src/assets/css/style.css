@@ -21,9 +21,9 @@
         --body-bg: #0d1117;
         --body-color: #FFFFFF;
         --head-text-color: #ffffff;
-        --card--bg: #ffffff;
-        --card--text: #0d1117;
-        --card--head: #0d1117;
+        --card--bg: #0d1117;
+        --card--text: #FFFFFF;
+        --card--head: #FFFFFF;
         --dash--bg: #0d1117;
         --foot-text-color: #ffffff;
     }
@@ -48,6 +48,11 @@
 
 .foot {
     color: var(--foot-text-color);
+}
+
+.cdb {
+    background-color: var(--body-bg);
+    color: var(--body-color);
 }
 
 body {
