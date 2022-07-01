@@ -34,11 +34,10 @@ if (isDark) {
           >
           </Nav>
           <Nav>
-            <Nav.Link href="https://instagram.com/anubhavclicks">Instagram</Nav.Link>
-            <Nav.Link href="https://www.linkedin.com/in/anubhabpatnaik0530/">LinkedIn</Nav.Link>
-            <Nav.Link eventKey={2} href="#footer">
-              HitMeUp
-            </Nav.Link>
+            <Nav.Link href="#tech">Tech</Nav.Link>
+            <Nav.Link href="#books">Books</Nav.Link>
+            <Nav.Link href="#movies-music-tv">Movies & TV</Nav.Link>
+            
           </Nav>
         </Navbar.Collapse>
       </Container>
