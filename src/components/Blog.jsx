@@ -4,6 +4,7 @@ import '../assets/css/nav.css'
 import hljs from 'highlight.js';
 import string from 'string'
 import markdownItAnchor from 'markdown-it-anchor'
+import Search from './Search'
 
 const slugify = s => string(s).slugify().toString()
 const md = require('markdown-it')({
@@ -42,9 +43,15 @@ export default function Blog() {
 		})()
 	}, [])
 
-	return (
-		<div style={{ alignItems: 'center', maxWidth: '70%', margin: 'auto', }} >
-			<p id="nav" className='markdown-body' dangerouslySetInnerHTML={{__html: html}}>
+	return (<>
+		<h1 className="mx-5 head" id='intro' style={{ textAlign: 'center', fontSize: '100px', fontFamily: 'Smooch' }}>
+			BLOGS
+		</h1>
+
+		<Search />
+		<div style={{ alignItems: 'center', maxWidth: '70%', margin: 'auto', marginTop: '20px', paddingTop: '10px' }} >
+			<p id="nav" className='markdown-body' dangerouslySetInnerHTML={{ __html: html }}>
 			</p>
-		</div>)
+		</div>
+	</>)
 }

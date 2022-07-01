@@ -18,7 +18,7 @@ function App() {
     <>
       <Header />
       <Dashboard />
-      <BlogIntro />
+      {/* <BlogIntro /> */}
       <Blog />
       <Footer />
 

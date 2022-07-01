@@ -64,8 +64,9 @@ export default function Search() {
 
 	return (
 		<>
-			<Paper style={{
-				borderRadius: '13px',
+			<Paper 
+			style={{
+				borderRadius: '10px',
 				padding: '4px 10px',
 				display: 'flex',
 				alignItems: 'center',
@@ -73,7 +74,7 @@ export default function Search() {
 				margin: '0 auto',
 				marginTop: '10px',
 				marginBottom: '10px',
-				backgroundColor: '#f5f5f5',
+				backgroundColor: '#fff',
 				border: '1px solid #e0e0e0',
 				boxShadow: '0px 1px 5px 0px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 3px 1px -2px rgba(0,0,0,0.12)',
 				transition: 'all 0.3s cubic-bezier(.25,.8,.25,1)',
@@ -82,7 +83,8 @@ export default function Search() {
 					backgroundColor: '#e0e0e0',
 					border: '1px solid #e0e0e0',
 				},
-			}}>
+			}}
+			 className='srch'>
 				<InputBase
 					placeholder="Search…"
 					inputProps={{ 'aria-label': 'search blogs' }}

@@ -1,7 +1,6 @@
 import React from 'react'
 import '../assets/css/blog.css';
 import '../assets/css/style.css';
-import Search from './Search';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -15,10 +14,7 @@ import movie from '../assets/img/movie.svg';
 export default function BlogIntro() {
 	return (
 		<div style={{ width: '100%' }}>
-			<h1 className="mx-5 head" id='intro' style={{ textAlign: 'center', fontSize: '100px', fontFamily: 'Smooch' }}>
-				BLOGS
-			</h1>
-			<Search />
+		
 			<div>
 				<div >
 					<div className="row justify-content-center mx-1" >
