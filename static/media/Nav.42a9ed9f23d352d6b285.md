@@ -1,5 +1,4 @@
-
-# Navigation
+# Index
 
 ### Tech
 
