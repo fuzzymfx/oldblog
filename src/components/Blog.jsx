@@ -5,6 +5,7 @@ import hljs from 'highlight.js';
 import string from 'string'
 import markdownItAnchor from 'markdown-it-anchor'
 import Search from './Search'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 const slugify = s => string(s).slugify().toString()
 const md = require('markdown-it')({
