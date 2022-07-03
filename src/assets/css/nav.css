@@ -352,7 +352,7 @@
 .markdown-body h6 {
     margin-top: 24px;
     margin-bottom: 16px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.25;
 }
 
@@ -364,7 +364,7 @@
 }
 
 .markdown-body h3 {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.25em;
 }
 
@@ -639,7 +639,6 @@
 .markdown-body details {
     margin-top: 0;
     margin-bottom: 16px;
-    font-weight: 300;
 }
 
 .markdown-body blockquote>:first-child {
