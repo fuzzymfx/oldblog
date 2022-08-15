@@ -34,9 +34,8 @@ export default function Header() {
             >
             </Nav>
             <Nav>
-              <Nav.Link href="#tech">Tech</Nav.Link>
-              <Nav.Link href="#books">Books</Nav.Link>
-              <Nav.Link href="#movies-music-tv">Movies & TV</Nav.Link>
+              <Nav.Link href="https://www.linkedin.com/in/anubhabpatnaik0530/">Linkedin</Nav.Link>
+              <Nav.Link href="https://www.github.com/codebotx">Github</Nav.Link>
 
             </Nav>
           </Navbar.Collapse>
@@ -61,9 +60,8 @@ export default function Header() {
             >
             </Nav>
             <Nav>
-              <Nav.Link href="#tech">Tech</Nav.Link>
-              <Nav.Link href="#books">Books</Nav.Link>
-              <Nav.Link href="#movies-music-tv">Movies & TV</Nav.Link>
+              <Nav.Link href="https://www.linkedin.com/in/anubhabpatnaik0530/">Linkedin</Nav.Link>
+              <Nav.Link href="https://www.github.com/codebotx">Github</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
