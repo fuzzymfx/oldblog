@@ -11,8 +11,7 @@ export default function Dashboard() {
 						<div className="img-home">
 							<h1>SHITPOST<span className="text-secondary">.IN</span> </h1>
 							<p className="lead my-4">
-								Here I random shitpost on my daily drivers, chill outs & research thingys. I work with software development and engineering. You can find most of my work on my github. I usually try to write about whatever I find interesting enough. I am into fantasy, fiction and science fiction. I love to read and talk about it. I am also a big fan of suspense drama, crime thrillers and watch a lot of thrillers. I also love action, adventure and heartwarming movies and tv. I try to be an honest critic but at times I get attached too to a character too soon ;)
-							</p>
+								Here I random shitpost on my daily drivers, chill outs & research stuff. I work with software development and engineering. You can find most of my work on my github. I like tech, science and engineering and also fantasy, fiction and science fiction.</p>
 							<a href="https://anubhavp.me">
 								<button className="btn btn-sm prbt">Profile</button>
 							</a>
