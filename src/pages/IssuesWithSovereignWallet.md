@@ -1,0 +1,57 @@
+---
+title:  Decentralization in Sovereign Wallet
+author: Anubhab Patnaik
+date: Aug 25, 2022
+---
+- [Metablockchain-core](#metablockchain-core)
+  - [Working, decentralized and secure?](#working-decentralized-and-secure)
+  - [Issues with the current infrastructure.](#issues-with-the-current-infrastructure)
+- [A better direction](#a-better-direction)
+  - [Improving the current infrastructure](#improving-the-current-infrastructure)
+
+
+## Metablockchain-core
+
+Metablockchain: The blockchain that lets you regulate digital currencies and crypto currencies across the nation. The platform is built on latest blockchain technologies that have significantly better runtime efficiency, is cost effective and supports parallel faster transactions when compared to other traditional blockchains.
+
+### Working, decentralized and secure?
+
+The product is built in such a way that a country/ government/central banking authority can adopt this platform and make it run parallel with the current existing infrastructure. Users can send and receive money across the country and it takes significantly less time to handle international transactions. It seems great, an easier way to handle transactions, without having to pay taxes to the government for making international exchanges! But the reality may not be as exciting.
+
+### Issues with the current infrastructure
+
+The current infrastructure is easy to use but is not as secure as claimed. The primary goal of the infrastructure is to make it easier for users to send and receive (traditional banking) money across the country and, it is not secure because it is **not decentralized**, **well-developed** and **secure**. Introducing a blockchain as a means of a runtime to carry out transactions as opposed to a traditional banking system is to make sure that all the transactions are handled in a decentralized manner and anyone when wanted, can query and view the source, and all the states of the transactions.
+
+The implementation of the current platform relies on running a private blockchain. The banks are responsible for running validator nodes that run on the private blockchain and are responsible for validating the transactions and the states of the system. The claims as said were to improve security and transparency but this approach opposes the purpose of the claims. A private blockchain to carry out transactions makes it basically a database that is not public and not accessible to anyone. The banks are servers and the blockchains act as databases. The clients are the users. Seems familiar? This is a client-server architecture with a blockchain running as a database.
+
+Building a platform for carrying out transactions is perfectly okay but introducing blockchains as a means of a just database doesn't make sense. It feels like a gimmick, a buzzword to secure money from the investors. Also, there is nothing wrong with a client-server architecture but the current infrastructure implements blockchain as a runtime for transactions, which, as always, is **slow**. Blockchains are supposed to be secure, transparent but they are not efficient and fast. The  transaction data when accessible publicly makes the network secure, which it is not. The bank may decide to invalidate valid transactions or validate invalid transactions and no one would know cause it would be there "on the blockchain". (Not saying that this would be done, because a banking sector obviously wouldn't carry out fraudulent transactions.) A more traditional client server architecture is equally secure. Look at the current banking scenario in India. UPI payments, netbanking and debit card payments, all carry out in a secure environment and are blazing fast.
+
+Sovereign wallet also lets you regulate digital currencies and crypto currencies across the world and carry out transactions without having to pay conversion fees. This current implementation of the ideology is an issue because of the following reasons:
+
+1. **Governments of countries do not generally allow cryptocurrencies to be a legal tender.** There are two countries as of now who currently allow cryptocurrencies to be traded and accepted as a legal tender and both of them are not one of the most developed or developing nations in the world. Targeting these countries to sell the platform might not be wise.
+
+ Governments usually have a means of regulating easier banking methods and exchange methods. Let us take the example of India. India doesn't allow cryptocurrencies to be a legal tender. Online payments being carried out in India follow traditional banking and government norms and are very fast.
+
+ There seems no solid revolutionary reason for a bank/government to introduce a new platform to run which regulates and carries out transactions and exchanges for free. Excellent existing platforms are already available and our infrastructure is not a new platform. *(Paytm, Gpay, Paypal, etc.)*
+
+1. **Conversion fees are a means of generating tax for a government.** International exchanges or cryptocurrency exchanges are a means of generating tax for a government. When you convert INR to USD or vice versa, you are generating tax for the government. Current conversion from ETH, BTC to INR is a very low fee but there does exist a fee.
+
+ The platform introduced doesn't have gas fees. Gas fees were a means of generating revenue for a miner, but having no gas fees implies that the bank and the infrastructure has to spend money on electricity and computing resources to validate transactions. The platform doesn't have to spend money on electricity and computing resources to validate transactions. It doesn't make sense to have a platform which makes you spend money on electricity and computing resources just to validate transactions.
+
+ Let us again take the example of India. Cryptocurrencies when made legal in India would have a 30% conversion fee, you'd have to pay 30% tax to the government for converting the cryptocurrency. It wouldn't make sense for India to allow the platform to run without a conversion fee. Also, there are a lot of other, well established platforms playing in the same field and pitching and hitting hard in these areas. *(CoinDCX, Coinbase, etc)*
+
+## A better direction  
+
+The approach may be justified once some of the important issues are addressed. Other than the mentioned problems, a lot of other factors need to pitch in to improve and make the platform more a feasible good product ro be sold. There might exist better, more effecient solutions to the above problems. Two of them may have these similar approaches:
+
+1. **Introduce a public blockchain** This solves the problem of spending money on validating transactions. Miners can validate transactions and the government/ bank can verify the transactions. This would be a huge bump in security, transparency and cost efficiency.
+
+ It still doesn't solve the problem of introducing a new platform just to do this. The tax play still becomes an issue here. How does the platform plan on managing taxes? Why would a bank allow a platform to run which would not benefit it in any manner? The government levies taxes to exchange international currencies. Why would it stop doing that? Even if it is allowed, how would it compete with other platforms working towards a similar strategy?
+
+1. **Following traditional client-server architecture using a distributed database** This would solve the problem of efficiency. Traditional architectures have been here for a very long time and a lot of research has been done on optimizing the existing infrastructure. Horizontal slicing, vertical slicing and many other optimization techniques may be used to improve the efficiency of the platform. The platform would be faster, equally secure and more efficient.
+
+ The issue with this approach is the mind tinkering question that what problem is it really trying to solve? Don't there exist platforms that are already doing everything this infrastructure is trying to solve? How would it be able to compete with the existing giants? Isn't the solution  building a redundant, regular, exchange banking platform that the world has no less of?  How would the platform differentiate itself? What is MVP, the USP of the platform? If it decides to work together with the government, what ensures that other existing strong infrastructure do not also decide to do this and do it better?
+
+### Improving the current infrastructure
+
+The product being built is an excellent product, no doubt. The tech being used, the polkadot blockchains, which allow a huge on queries in a much faster time, the faster and efficient transaction mechanisms, interoperability, the economic scalability, user driven governance, the forkless upgrades and the claimed security and transparency, are a step in the right direction, but there are grave issues those still need to be discussed before the product is introduced and launched.
