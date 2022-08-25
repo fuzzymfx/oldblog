@@ -30,15 +30,17 @@ Sovereign wallet also lets you regulate digital currencies and crypto currencies
 
 1. **Governments of countries do not generally allow cryptocurrencies to be a legal tender.** There are two countries as of now who currently allow cryptocurrencies to be traded and accepted as a legal tender and both of them are not one of the most developed or developing nations in the world. Targeting these countries to sell the platform might not be wise.
 
- Governments usually have a means of regulating easier banking methods and exchange methods. Let us take the example of India. India doesn't allow cryptocurrencies to be a legal tender. Online payments being carried out in India follow traditional banking and government norms and are very fast.
+	 Governments usually have a means of regulating easier banking methods and exchange methods. Let us take the example of India. India doesn't allow cryptocurrencies to be a legal tender. Online payments being carried out in India follow traditional banking and government norms and are very fast.
 
- There seems no solid revolutionary reason for a bank/government to introduce a new platform to run which regulates and carries out transactions and exchanges for free. Excellent existing platforms are already available and our infrastructure is not a new platform. *(Paytm, Gpay, Paypal, etc.)*
+	There seems no solid revolutionary reason for a bank/government to introduce a new platform to run which regulates and carries out transactions and exchanges for free. Excellent existing platforms are already available and our infrastructure is not a new platform. *(Paytm, Gpay, Paypal, etc.)*
+ 
 
 1. **Conversion fees are a means of generating tax for a government.** International exchanges or cryptocurrency exchanges are a means of generating tax for a government. When you convert INR to USD or vice versa, you are generating tax for the government. Current conversion from ETH, BTC to INR is a very low fee but there does exist a fee.
 
- The platform introduced doesn't have gas fees. Gas fees were a means of generating revenue for a miner, but having no gas fees implies that the bank and the infrastructure has to spend money on electricity and computing resources to validate transactions. The platform doesn't have to spend money on electricity and computing resources to validate transactions. It doesn't make sense to have a platform which makes you spend money on electricity and computing resources just to validate transactions.
+	The platform introduced doesn't have gas fees. Gas fees were a means of generating revenue for a miner, but having no gas fees implies that the bank and the infrastructure has to spend money on electricity and computing resources to validate transactions. The platform doesn't have to spend money on electricity and computing resources to validate transactions. It doesn't make sense to have a platform which makes you spend money on electricity and computing resources just to validate transactions.
 
- Let us again take the example of India. Cryptocurrencies when made legal in India would have a 30% conversion fee, you'd have to pay 30% tax to the government for converting the cryptocurrency. It wouldn't make sense for India to allow the platform to run without a conversion fee. Also, there are a lot of other, well established platforms playing in the same field and pitching and hitting hard in these areas. *(CoinDCX, Coinbase, etc)*
+	Let us again take the example of India. Cryptocurrencies when made legal in India would have a 30% conversion fee, you'd have to pay 30% tax to the government for converting the cryptocurrency. It wouldn't make sense for India to allow the platform to run without a conversion fee. Also, there are a lot of other, well established platforms playing in the same field and pitching and hitting hard in these areas. *(CoinDCX, Coinbase, etc)* 
+
 
 ## A better direction  
 
@@ -46,11 +48,12 @@ The approach may be justified once some of the important issues are addressed. O
 
 1. **Introduce a public blockchain** This solves the problem of spending money on validating transactions. Miners can validate transactions and the government/ bank can verify the transactions. This would be a huge bump in security, transparency and cost efficiency.
 
- It still doesn't solve the problem of introducing a new platform just to do this. The tax play still becomes an issue here. How does the platform plan on managing taxes? Why would a bank allow a platform to run which would not benefit it in any manner? The government levies taxes to exchange international currencies. Why would it stop doing that? Even if it is allowed, how would it compete with other platforms working towards a similar strategy?
+	It still doesn't solve the problem of introducing a new platform just to do this. The tax play still becomes an issue here. How does the platform plan on managing taxes? Why would a bank allow a platform to run which would not benefit it in any manner? The government levies taxes to exchange international currencies. Why would it stop doing that? Even if it is allowed, how would it compete with other platforms working towards a similar strategy?
 
 1. **Following traditional client-server architecture using a distributed database** This would solve the problem of efficiency. Traditional architectures have been here for a very long time and a lot of research has been done on optimizing the existing infrastructure. Horizontal slicing, vertical slicing and many other optimization techniques may be used to improve the efficiency of the platform. The platform would be faster, equally secure and more efficient.
 
- The issue with this approach is the mind tinkering question that what problem is it really trying to solve? Don't there exist platforms that are already doing everything this infrastructure is trying to solve? How would it be able to compete with the existing giants? Isn't the solution  building a redundant, regular, exchange banking platform that the world has no less of?  How would the platform differentiate itself? What is MVP, the USP of the platform? If it decides to work together with the government, what ensures that other existing strong infrastructure do not also decide to do this and do it better?
+	The issue with this approach is the mind tinkering question that what problem is it really trying to solve? Don't there exist platforms that are already doing everything this infrastructure is trying to solve? How would it be able to compete with the existing giants? Isn't the solution  building a redundant, regular, exchange banking platform that the world has no less of?  How would the platform differentiate itself? What is MVP, the USP of the platform? If it decides to work together with the government, what ensures that other existing strong infrastructure do not also decide to do this and do it better?
+
 
 ### Improving the current infrastructure
 
