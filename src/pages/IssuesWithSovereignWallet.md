@@ -1,11 +1,12 @@
 ---
-title:  Decentralization in Sovereign Wallet
+title:  'Decentralization in Sovereign Wallet: A Case Study'
 author: Anubhab Patnaik
 date: Aug 25, 2022
 ---
 - [Metablockchain-core](#metablockchain-core)
   - [Working, decentralized and secure?](#working-decentralized-and-secure)
   - [Issues with the current infrastructure.](#issues-with-the-current-infrastructure)
+  - [Ideological challenges.](#ideological-challenges)
 - [A better direction](#a-better-direction)
   - [Improving the current infrastructure](#improving-the-current-infrastructure)
 
@@ -14,17 +15,19 @@ date: Aug 25, 2022
 
 Metablockchain: The blockchain that lets you regulate digital currencies and crypto currencies across the nation. The platform is built on latest blockchain technologies that have significantly better runtime efficiency, is cost effective and supports parallel faster transactions when compared to other traditional blockchains.
 
-### Working, decentralized and secure?
+### Robust, decentralized and secure?
 
 The product is built in such a way that a country/ government/central banking authority can adopt this platform and make it run parallel with the current existing infrastructure. Users can send and receive money across the country and it takes significantly less time to handle international transactions. It seems great, an easier way to handle transactions, without having to pay taxes to the government for making international exchanges! But the reality may not be as exciting.
 
-### Issues with the current infrastructure
+The current infrastructure is easy to use but is not as secure as claimed. The primary goal of the infrastructure is to make it easier for users to send and receive (traditional banking) money across the country and, it is not secure because it is **not decentralized**, and **well-developed** . Introducing a blockchain as a means of a runtime to carry out transactions as opposed to a traditional banking system is to make sure that all the transactions are handled in a decentralized manner and anyone when wanted, can query and view the source, and all the states of the transactions but it is not the case here.
 
-The current infrastructure is easy to use but is not as secure as claimed. The primary goal of the infrastructure is to make it easier for users to send and receive (traditional banking) money across the country and, it is not secure because it is **not decentralized**, **well-developed** and **secure**. Introducing a blockchain as a means of a runtime to carry out transactions as opposed to a traditional banking system is to make sure that all the transactions are handled in a decentralized manner and anyone when wanted, can query and view the source, and all the states of the transactions.
+### Issues with the current infrastructure
 
 The implementation of the current platform relies on running a private blockchain. The banks are responsible for running validator nodes that run on the private blockchain and are responsible for validating the transactions and the states of the system. The claims as said were to improve security and transparency but this approach opposes the purpose of the claims. A private blockchain to carry out transactions makes it basically a database that is not public and not accessible to anyone. The banks are servers and the blockchains act as databases. The clients are the users. Seems familiar? This is a client-server architecture with a blockchain running as a database.
 
-Building a platform for carrying out transactions is perfectly okay but introducing blockchains as a means of a just database doesn't make sense. It feels like a gimmick, a buzzword to secure money from the investors. Also, there is nothing wrong with a client-server architecture but the current infrastructure implements blockchain as a runtime for transactions, which, as always, is **slow**. Blockchains are supposed to be secure, transparent but they are not efficient and fast. The  transaction data when accessible publicly makes the network secure, which it is not. The bank may decide to invalidate valid transactions or validate invalid transactions and no one would know cause it would be there "on the blockchain". (Not saying that this would be done, because a banking sector obviously wouldn't carry out fraudulent transactions.) A more traditional client server architecture is equally secure. Look at the current banking scenario in India. UPI payments, netbanking and debit card payments, all carry out in a secure environment and are blazing fast.
+Building a platform for carrying out transactions is perfectly okay but introducing blockchains as a means of a just database doesn't make sense. It feels like a gimmick, a buzzword to secure money from the investors. Also, there is nothing wrong with a client-server architecture but the current infrastructure implements blockchain as a runtime for transactions, which, as always, is **slow**. Blockchains are supposed to be secure, transparent but they are not efficient and fast. The  transaction data when accessible publicly makes the network secure, which it is not, here. The bank may decide to invalidate valid transactions or validate invalid transactions and no one would know cause it would be there "on the blockchain". (Not saying that this would be done, because a banking sector obviously wouldn't carry out fraudulent transactions.) Wherease a more traditional client server architecture is equally secure and more efficient. Look at the current banking scenario in India. UPI payments, netbanking and debit card payments, all carry out in a secure environment and are blazing fast.
+
+### Ideological challenges
 
 Sovereign wallet also lets you regulate digital currencies and crypto currencies across the world and carry out transactions without having to pay conversion fees. This current implementation of the ideology is an issue because of the following reasons:
 
@@ -44,7 +47,7 @@ Sovereign wallet also lets you regulate digital currencies and crypto currencies
 
 ## A better direction  
 
-The approach may be justified once some of the important issues are addressed. Other than the mentioned problems, a lot of other factors need to pitch in to improve and make the platform more a feasible good product ro be sold. There might exist better, more effecient solutions to the above problems. Two of them may have these similar approaches:
+There might exist better, more effecient solutions to the above problems but two of them may have these similar approaches:
 
 1. **Introduce a public blockchain** This solves the problem of spending money on validating transactions. Miners can validate transactions and the government/ bank can verify the transactions. This would be a huge bump in security, transparency and cost efficiency.
 
@@ -57,4 +60,4 @@ The approach may be justified once some of the important issues are addressed. O
 
 ### Improving the current infrastructure
 
-The product being built is an excellent product, no doubt. The tech being used, the polkadot blockchains, which allow a huge on queries in a much faster time, the faster and efficient transaction mechanisms, interoperability, the economic scalability, user driven governance, the forkless upgrades and the claimed security and transparency, are a step in the right direction, but there are grave issues those still need to be discussed before the product is introduced and launched.
+The approaches may be justified once some of the important issues are addressed. Other than the mentioned problems, a lot of other factors need to pitch in to improve and make the platform more a feasible good product to be sold. The product being built is an excellent product, no doubt. The tech being used, the polkadot blockchains, which allow a huge on queries in a much faster time, the faster and efficient transaction mechanisms, interoperability, the economic scalability, user driven governance, the forkless upgrades and the claimed security and transparency, are a step in the right direction, but there are grave issues those still need to be discussed before the product is introduced and launched.
