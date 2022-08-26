@@ -3,13 +3,15 @@ title:  'Decentralization in Sovereign Wallet: A Case Study'
 author: Anubhab Patnaik
 date: Aug 25, 2022
 ---
+
+I am working with [Squbix Digital](https://squbix.com/) building a decentralized, secure and scalable solution using blockchain technology for [Sovereign Wallet](https://www.linkedin.com/company/metamui/?originalSubdomain=sg). The solution is to build a platform to exchange digital assets such as cryptocurrencies and digital currencies across a country/ organization or cross border payments systems and here are my nitpicks with the product.
+
 - [Metablockchain-core](#metablockchain-core)
   - [Working, decentralized and secure?](#working-decentralized-and-secure)
   - [Issues with the current infrastructure.](#issues-with-the-current-infrastructure)
   - [Ideological challenges.](#ideological-challenges)
 - [A better direction](#a-better-direction)
   - [Improving the current infrastructure](#improving-the-current-infrastructure)
-
 
 ## Metablockchain-core
 
@@ -25,7 +27,7 @@ The current infrastructure is easy to use but is not as secure as claimed. The p
 
 The implementation of the current platform relies on running a private blockchain. The banks are responsible for running validator nodes that run on the private blockchain and are responsible for validating the transactions and the states of the system. The claims as said were to improve security and transparency but this approach opposes the purpose of the claims. A private blockchain to carry out transactions makes it basically a database that is not public and not accessible to anyone. The banks are servers and the blockchains act as databases. The clients are the users. Seems familiar? This is a client-server architecture with a blockchain running as a database.
 
-Building a platform for carrying out transactions is perfectly okay but introducing blockchains as a means of a just database doesn't make sense. It feels like a gimmick, a buzzword to secure money from the investors. Also, there is nothing wrong with a client-server architecture but the current infrastructure implements blockchain as a runtime for transactions, which, as always, is **slow**. Blockchains are supposed to be secure, transparent but they are not efficient and fast. The  transaction data when accessible publicly makes the network secure, which it is not, here. The bank may decide to invalidate valid transactions or validate invalid transactions and no one would know cause it would be there "on the blockchain". (Not saying that this would be done, because a banking sector obviously wouldn't carry out fraudulent transactions.) Wherease a more traditional client server architecture is equally secure and more efficient. Look at the current banking scenario in India. UPI payments, netbanking and debit card payments, all carry out in a secure environment and are blazing fast.
+Building a platform for carrying out transactions is perfectly okay but introducing blockchains as a means of a just database doesn't make sense. It feels like a gimmick, a buzzword to secure money from the investors. Also, there is nothing wrong with a client-server architecture but the current infrastructure implements blockchain as a runtime for transactions, which, as always, is **slow**. Blockchains are supposed to be secure, transparent but they are not efficient and fast. The  transaction data when accessible publicly makes the network secure, which it is not, here. The bank may decide to invalidate valid transactions or validate invalid transactions and no one would know cause it would be there "on the blockchain". (Not saying that this would be done, because a banking sector obviously wouldn't carry out fraudulent transactions.) Whereas a more traditional client server architecture is equally secure and more efficient. Look at the current banking scenario in India. UPI payments, netbanking and debit card payments, all carry out in a secure environment and are blazing fast.
 
 ### Ideological challenges
 
@@ -33,7 +35,7 @@ Sovereign wallet also lets you regulate digital currencies and crypto currencies
 
 1. **Governments of countries do not generally allow cryptocurrencies to be a legal tender.** There are two countries as of now who currently allow cryptocurrencies to be traded and accepted as a legal tender and both of them are not one of the most developed or developing nations in the world. Targeting these countries to sell the platform might not be wise.
 
-	 Governments usually have a means of regulating easier banking methods and exchange methods. Let us take the example of India. India doesn't allow cryptocurrencies to be a legal tender. Online payments being carried out in India follow traditional banking and government norms and are very fast.
+	 Governments usually have a means of regulating easier banking methods and exchange methods. Let us take the example of India. India doesn't allow cryptocurrencies to be a legal tender. Online payments being carried out in India follow traditional banking and government norms and are very fast. Let us take another example of the UID system followed in India, **Adhaar** system. The system is encrypted using military grade encryption. The system is very secure and the government is very responsible for the security of the system. The current implementation of encryption used at Sovereign Wallet is SHA-256 which although is a very secure algorithm would seem like legacy software for the Indian government to integrate and work with. The task is tedious and unnecessary.
 
 	There seems no solid revolutionary reason for a bank/government to introduce a new platform to run which regulates and carries out transactions and exchanges for free. Excellent existing platforms are already available and our infrastructure is not a new platform. *(Paytm, Gpay, Paypal, etc.)*
  
@@ -42,12 +44,14 @@ Sovereign wallet also lets you regulate digital currencies and crypto currencies
 
 	The platform introduced doesn't have gas fees. Gas fees were a means of generating revenue for a miner, but having no gas fees implies that the bank and the infrastructure has to spend money on electricity and computing resources to validate transactions. The platform doesn't have to spend money on electricity and computing resources to validate transactions. It doesn't make sense to have a platform which makes you spend money on electricity and computing resources just to validate transactions.
 
-	Let us again take the example of India. Cryptocurrencies when made legal in India would have a 30% conversion fee, you'd have to pay 30% tax to the government for converting the cryptocurrency. It wouldn't make sense for India to allow the platform to run without a conversion fee. Also, there are a lot of other, well established platforms playing in the same field and pitching and hitting hard in these areas. *(CoinDCX, Coinbase, etc)* 
+	Let us again take the example of India. Cryptocurrencies when made legal in India would have a 30% conversion fee, you'd have to pay 30% tax to the government for converting the cryptocurrency. It wouldn't make sense for India to allow the platform to run without a conversion fee. Also, there are a lot of other, well established platforms playing in the same field and pitching and hitting hard in these areas. *(CoinDCX, Coinbase, etc)*
+
+1. **Present operating scenario in foreign exchanges platforms .** The existing exchange platforms are extremely secure, well-established and highly efficient. The working and operation of these platforms are governed by international laws. The current implementation of Sovereign Wallet doesn't include any gas fees for transactions. It'd either have to tie up with an exchange platform or would have to come up with some other way to convince a country to let it handle all of it's transactions. Either way it would be both cost ineffective solutions. With private blockchains and 0 gas fees Sovereign Wallet will be having a hard time trying to carry out free transactions across the globe. The organization, at first, would have to pay for the mining and electricity and on top of that would have to pay the cross border payment fees too.
 
 
 ## A better direction  
 
-There might exist better, more effecient solutions to the above problems but two of them may have these similar approaches:
+There might exist better, more efficient solutions to the above problems but two of them may have these similar approaches:
 
 1. **Introduce a public blockchain** This solves the problem of spending money on validating transactions. Miners can validate transactions and the government/ bank can verify the transactions. This would be a huge bump in security, transparency and cost efficiency.
 
