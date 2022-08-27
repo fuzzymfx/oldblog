@@ -1,5 +1,5 @@
 ---
-title:  'Decentralization in Sovereign Wallet: A Case Study'
+title:  'Decentralization in MetaMUI Wallet: A Case Study'
 author: Anubhab Patnaik
 date: Aug 25, 2022
 ---
@@ -8,8 +8,8 @@ I am working with [Squbix Digital](https://squbix.com/) to build a decentralized
 
 - [Metablockchain-core](#metablockchain-core)
   - [Robust, decentralized and secure?](#robust-decentralized-and-secure)
-  - [Issues with the current infrastructure.](#issues-with-the-current-infrastructure)
-  - [Ideological challenges.](#ideological-challenges)
+  - [Issues with the current infrastructure](#issues-with-the-current-infrastructure)
+  - [Ideological challenges](#ideological-challenges)
 - [A better direction](#a-better-direction)
   - [Improving the current infrastructure](#improving-the-current-infrastructure)
 
@@ -33,11 +33,11 @@ Building a platform for carrying out transactions is perfectly okay but introduc
 
 ### Ideological challenges
 
-Sovereign wallet also lets you regulate digital currencies and crypto-currencies across the world and carry out transactions without having to pay conversion fees. This current implementation of the ideology may become an issue because of the following reasons:
+MetaMUI wallet also lets you regulate digital currencies and crypto-currencies across the world and carry out transactions without having to pay conversion fees. This current implementation of the ideology may become an issue because of the following reasons:
 
 1. **Governments of countries do not generally allow cryptocurrencies to be legal tender.** There are two countries as of now that currently allow cryptocurrencies to be traded and accepted as legal tender and both of them are not the most developed or developing nations in the world. Targeting these countries to sell the platform might not be wise.
 
-	 Governments usually have a means of regulating easier banking methods and exchange methods. Let us take the example of India. India doesn't allow cryptocurrencies to be legal tender. Online payments being carried out in India follow traditional banking and government norms and are very fast. Let us take another example of the UID system followed in India, **Adhaar** system. The system is encrypted using military-grade encryption. The system is very secure and the government is very responsible for the security of the system. The current implementation of encryption used at Sovereign Wallet is SHA-256 which although a very secure algorithm would seem like legacy software for the Indian government to integrate and work with. The task is tedious and unnecessary.
+	 Governments usually have a means of regulating easier banking methods and exchange methods. Let us take the example of India. India doesn't allow cryptocurrencies to be legal tender. Online payments being carried out in India follow traditional banking and government norms and are very fast. Let us take another example of the UID system followed in India, **Adhaar** system. The system is encrypted using military-grade encryption. The system is very secure and the government is very responsible for the security of the system. The current implementation of encryption used at MetaMUI Wallet is SHA-256 which although a very secure algorithm would seem like legacy software for the Indian government to integrate and work with. The task is tedious and unnecessary.
 
 	There seems no solid revolutionary reason for a bank/government to introduce a new platform to run which regulates and carries out transactions and exchanges for free. Excellent existing platforms are already available and our infrastructure is not a new platform. *(Paytm, Gpay, Paypal, etc.)*
  
@@ -48,7 +48,7 @@ Sovereign wallet also lets you regulate digital currencies and crypto-currencies
 
 	Let us again take the example of India. Cryptocurrencies when made legal in India would have a 30% conversion fee, you'd have to pay a 30% tax to the government for converting the cryptocurrency. It wouldn't make sense for India to allow the platform to run without a conversion fee. Also, there are a lot of other, well-established platforms playing in the same field and pitching and hitting hard in these areas. *(CoinDCX, Coinbase, etc)*
 
-1. **Present operating scenario in foreign exchange platforms.** The existing exchange platforms are extremely secure, well-established, and highly efficient. The working and operation of these platforms are governed by international laws. The current implementation of Sovereign Wallet doesn't include any gas fees for transactions. It'd either have to tie up with an exchange platform or would have to come up with some other way to convince a country to let it handle all of its transactions. Either way, it would be both cost ineffective solutions. With private blockchains and 0 gas fees, Sovereign Wallet will be having a hard time trying to carry out free transactions across the globe. The organization, at first, would have to pay for the mining and electricity and on top of that would have to pay the cross-border payment fees too.
+1. **Present operating scenario in foreign exchange platforms.** The existing exchange platforms are extremely secure, well-established, and highly efficient. The working and operation of these platforms are governed by international laws. The current implementation of MetaMUI Wallet doesn't include any gas fees for transactions. It'd either have to tie up with an exchange platform or would have to come up with some other way to convince a country to let it handle all of its transactions. Either way, it would be both cost ineffective solutions. With private blockchains and 0 gas fees, MetaMUI Wallet will be having a hard time trying to carry out free transactions across the globe. The organization, at first, would have to pay for the mining and electricity and on top of that would have to pay the cross-border payment fees too.
 
 
 ## A better direction  
