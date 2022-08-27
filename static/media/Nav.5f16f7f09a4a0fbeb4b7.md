@@ -2,7 +2,7 @@
 
 1. [Zuzu: A Static Site Generator](./zuzu.html)
 1. [Why is Web3 not feasible?](./InfeasibleWeb3.html)
-1. [Issues with Sovereign Wallet](./IssuesWithSovereignWallet.html)
+1. [Issues with MetaMUI Wallet](./IssuesWithSovereignWallet.html)
 
 *Coming Soon*
 
