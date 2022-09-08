@@ -30,7 +30,7 @@ The current infrastructure is easy to use but is not as secure as claimed. The p
 
 ### Issues with the current infrastructure
 
-1. **The implementation of the current platform relies on running a private blockchain**. The banks are responsible for running validator nodes that run on the private blockchain and are responsible for validating the transactions and the states of the system. The claims as said were to improve security and transparency but this approach opposes the purpose of the claims. A private blockchain to carry out transactions makes it a kind of database and a runtime that is not public and not accessible to anyone. The banks are servers and the blockchains act as databases. The clients are the users. Seem familiar? This is a client-server architecture with a blockchain running as a database.
+1. **The usage of a private blockchain**. The banks are responsible for running validator nodes that run on the private blockchain and are responsible for validating the transactions and the states of the system. The claims as said were to improve security and transparency but this approach opposes the purpose of the claims. A private blockchain to carry out transactions makes it a kind of database and a runtime that is not public and not accessible to anyone. The banks are servers and the blockchains act as databases. The clients are the users. Seem familiar? This is a client-server architecture with a blockchain running as a database.
 
 	> Bank Node is a publisher of anonymous tokenized cash. Users can choose Bank Node service providers and
 		have a token contract to issue digital cash. Based on the contract, it can be a debit card or credit card type.
@@ -45,7 +45,7 @@ The current infrastructure is easy to use but is not as secure as claimed. The p
 		conventional credit card payment but it is much faster and costs less than an account-based international bank
 		transfer.
 
-	Bank nodes have the authority to govern, validate transactions and decide the fate of the entire system, which makes the bank a central authority here. Building a platform for carrying out transactions is perfectly okay but introducing blockchains as a means of a just database doesn't make sense. It feels like a gimmick, a buzzword to secure seed & money from investors. Also, there is nothing wrong with a client-server architecture but the speed of current infrastructure relies on implementing a blockchain as a runtime for transactions, which, as always, is **slow**. Blockchains are supposed to be secure and transparent but they are not efficient and fast. The transaction data when accessible publicly make the network secure, which it is not, here. Whereas a more traditional client-server architecture is equally secure and more efficient. Look at the current banking and payment gateway scenario in India. UPI payments, net banking, and debit card payments, are all carried out in a secure environment and are blazing fast.
+	 Building a platform for carrying out transactions is perfectly okay but introducing blockchains as a means of a just database doesn't make sense. It feels like a gimmick, a buzzword to secure seed & money from investors. Also, there is nothing wrong with a client-server architecture but the speed of current infrastructure relies on implementing a blockchain as a runtime for transactions, which, as always, is **slow**. Blockchains are supposed to be secure and transparent but they are not efficient and fast. The transaction data when accessible publicly make the network secure, which it is not, here. Whereas a more traditional client-server architecture is equally secure and more efficient. Look at the current banking and payment gateway scenario in India. UPI payments, net banking, and debit card payments, are all carried out in a secure environment and are blazing fast.
 	>	A blockchain-style data store is secure but it is not efficient in terms of computation, communication, and data point of view. 
 
 1. **The Consensus mechanism**
@@ -56,7 +56,7 @@ The current infrastructure is easy to use but is not as secure as claimed. The p
 		participate in the consensus of newly created digital currencies as an endorser. In the case of digital currency
 		consensus, **only a Bank Node can be a leader or the block proposer**.
 
-	This gives authority to the bank nodes to validate any transactions. The bank may decide to invalidate valid transactions or validate invalid transactions and no one would know cause it would be there "on the blockchain". (Not saying that this would be done, because a banking sector obviously wouldn't carry out fraudulent transactions.) This does raise a question about the prorposed solution that claims to have solved the blockchain trilemma.
+	Bank nodes have the authority to govern, validate transactions and decide the fate of the entire system, which makes the bank a central authority here. This gives authority to the bank nodes to validate any transactions. The bank may decide to invalidate valid transactions or validate invalid transactions and no one would know cause it would be there "on the blockchain". (Not saying that this would be done, because a banking sector obviously wouldn't carry out fraudulent transactions.) This does raise a question about the prorposed solution that claims to have solved the blockchain trilemma.
 		
 	>	The leader node also acts as a serializer to serialize transactions. The leader node receives block rewards and
 		transaction fees. Endorser also receives the endorsing rewards when the node’s endorsement is included in the
@@ -66,7 +66,8 @@ The current infrastructure is easy to use but is not as secure as claimed. The p
 	endorsement rewards when the node’s endorsement is included in the majority vote. The leader node receives the
 	block rewards when the node’s block is included in the majority vote. How does a network with an nPOS consensus protocol pay or reward nodes if there are no gas fees involved?
 
-1. **ACB** 
+1. **ACB (Algorithmic central bank)**
+
 	The current platform runs a single and private blockchain without any overhead of the AI mechanism that will fuel the infrastructure.
 	Implementing the Algorithmic Central Bank can be a key player in the industry. The current platform is inefficient when run using a single private blockchain and no centralized banking establishment to control inflation and deflation. The product can be improved when the existing mechanism as proposed in the whitepaper come to play. The current platform might not be a very good solution for the industry unless the stated propositions come to play.
 
