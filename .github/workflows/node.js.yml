@@ -27,8 +27,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
 
-    - run: git config --global user.name "Anubhab Patnaik"
-    - run: git config --global user.name "anubhabr50@gmail.com"
+    - run: git config --global user.name codebotx
+    - run: git config --global user.name anubhabr50@gmail.com
     - run: npm ci
     - run: cp -fr ./helper/generate/package.json ./
     - run: npm run generate
