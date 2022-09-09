@@ -12,7 +12,7 @@ export default function Dashboard() {
 							<h1>SHITPOST<span className="text-secondary">.IN</span> </h1>
 							<p className="lead my-4">
 								Here I random shitpost on my daily drivers, chill outs & research stuff. I work with software development and engineering. You can find most of my work on my github. I like tech, science and engineering and also fantasy, fiction and science fiction.</p>
-							<a href="https://anubhavp.me">
+							<a href="https://anubhavp.dev">
 								<button className="btn btn-sm prbt">Profile</button>
 							</a>
 						</div>

@@ -76,7 +76,7 @@ const JSONify = (arr, filename, jsonpath) => {
     const file = readFile(filename)
     const outfilename = getOutputFilename(filename, '')
     console.log(outfilename)
-    file.data.link = "https://anubhavp.me/blog/" + outfilename
+    file.data.link = "https://anubhavp.dev/blog/" + outfilename
     file.data.content = file.html
     arr.push(file.data)
     var json = JSON.stringify(arr);
