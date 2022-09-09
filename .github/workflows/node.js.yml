@@ -33,7 +33,7 @@ jobs:
     - run: cp -fr ./helper/generate/package.json ./
     - run: npm run generate
     - run: cp -fr ./helper/build/package.json ./ 
-    - run: git remote remove origin
+    # - run: git remote remove origin
     - run: git remote set-url origin https://codebotx:${{ secrets.PAT }}@github.com/codebotx/blog.git
     - run: npm run deploy
     - run: git add .
