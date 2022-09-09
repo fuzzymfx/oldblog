@@ -30,7 +30,6 @@ jobs:
     - run: cp -fr ./helper/generate/package.json ./
     - run: npm run generate
     - run: cp -fr ./helper/build/package.json ./ 
-    - run: npm run build
     - run: npm run deploy
     - run: git config user.name codebotx
     - run: git config user.name anubhabr50@gmail.com 
