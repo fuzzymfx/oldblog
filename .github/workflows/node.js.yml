@@ -29,6 +29,7 @@ jobs:
 
     - run: git config --global user.name codebotx
     - run: git config --global user.name anubhabr50@gmail.com
+    - run: git remote -v
     - run: npm ci
     - run: cp -fr ./helper/generate/package.json ./
     - run: npm run generate
