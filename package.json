@@ -35,7 +35,6 @@
         "web-vitals": "^2.1.4",
         "yarn": "^1.22.19"
     },
-    "type": "module",
     "scripts": {
         "predeploy": "CI=false && npm run build",
         "deploy": "gh-pages -d build",
