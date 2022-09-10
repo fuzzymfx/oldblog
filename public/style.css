@@ -1062,20 +1062,16 @@
 .ic {
 
     color: var(--foot-text-color) !important;
-    padding-left: 3px;
-    padding-right: 3px;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-decoration: none;
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+    margin-right: 3px !important;
+    margin-left: 3px !important;
+    text-decoration: none !important;
 
 }
 
-
-
-
 .foot {
-
-    padding-bottom: 15px;
+    padding-bottom: 15px !important;
 }
 
 @media screen and (min-width: 1024px) {
