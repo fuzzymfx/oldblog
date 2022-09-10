@@ -47,6 +47,7 @@
         --color-accent-emphasis: #1f6feb;
         --color-attention-subtle: rgba(187, 128, 9, 0.15);
         --color-danger-fg: #f85149;
+        --foot-text-color: #ffffff;
     }
 }
 
@@ -98,6 +99,7 @@
         --color-accent-emphasis: #0969da;
         --color-attention-subtle: #fff8c5;
         --color-danger-fg: #cf222e;
+        --foot-text-color: black;
     }
 }
 
@@ -1055,6 +1057,10 @@
 
 .markdown-body ::-webkit-calendar-picker-indicator {
     filter: invert(50%);
+}
+
+.foot {
+    color: var(--foot-text-color);
 }
 
 @media screen and (min-width: 1024px) {
