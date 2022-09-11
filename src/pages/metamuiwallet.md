@@ -30,7 +30,9 @@ The current infrastructure is easy to use but is not as secure as claimed. The p
 
 ### Issues with the current infrastructure
 
-1. **The usage of a private blockchain**. The banks are responsible for running validator nodes that run on the private blockchain and are responsible for validating the transactions and the states of the system. The claims as said were to improve security and transparency but this approach opposes the purpose of the claims. A private blockchain to carry out transactions makes it a kind of database and a runtime that is not public and not accessible to anyone. The banks are servers and the blockchains act as databases. The clients are the users. Seem familiar? This is a client-server architecture with a blockchain running as a database.
+1. **The usage of a private blockchain**. 
+
+	The banks are responsible for running validator nodes that run on the private blockchain and are responsible for validating the transactions and the states of the system. The claims as said were to improve security and transparency but this approach opposes the purpose of the claims. A private blockchain to carry out transactions makes it a kind of database and a runtime that is not public and not accessible to anyone. The banks are servers and the blockchains act as databases. The clients are the users. Seem familiar? This is a client-server architecture with a blockchain running as a database.
 
 	> Bank Node is a publisher of anonymous tokenized cash. Users can choose Bank Node service providers and
 		have a token contract to issue digital cash. Based on the contract, it can be a debit card or credit card type.
