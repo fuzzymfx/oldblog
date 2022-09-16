@@ -29,12 +29,10 @@ jobs:
 
     - run: git config --global user.name codebotx
     - run: git config --global user.email anubhabr50@gmail.com
-    - run: npm ci
-    - run: cp -fr ./helper/generate/package.json ./
-    - run: npm run generate
-    - run: cp -fr ./helper/build/package.json ./ 
-    # - run: git remote remove origin
     - run: git remote set-url origin https://codebotx:${{ secrets.PAT }}@github.com/codebotx/blog.git
+    - run: npm ci
+    - run: npm run generate
+    - run: npm run build --if-present
     - run: npm run deploy
     - run: git add .
     - run: git commit -m "Deploying latest commit"

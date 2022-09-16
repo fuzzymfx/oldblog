@@ -1,12 +1,13 @@
-import fs from 'fs'
-import glob from 'glob'
-import matter from 'gray-matter'
-import mkdirp from 'mkdirp'
-import path from 'path'
-import hljs from 'highlight.js';
-import MarkdownIt from 'markdown-it'
-import markdownItAnchor from 'markdown-it-anchor'
-import string from 'string'
+const fs = require('fs')
+const glob = require('glob')
+const matter = require('gray-matter')
+const mkdirp = require('mkdirp')
+const path = require('path')
+const hljs = require('highlight.js');
+const MarkdownIt = require('markdown-it')
+const markdownItAnchor = require('markdown-it-anchor')
+const string = require('string')
+
 
 
 const slugify = s => string(s).slugify().toString()
