@@ -1,5 +1,5 @@
 @media (prefers-color-scheme: light) {
-     :root {
+    :root {
         color-scheme: dark;
         --hue-color: 243;
         --body-bg: #FFFFFF;
@@ -12,11 +12,14 @@
         --foot-text-color: black;
         --scroll-bar-color: hsl(var(--hue-color), 12%, 100%);
         --scroll-thumb-color: hsl(var(--hue-color), 12%, 90%);
+        --scroll-thumb-hover-color: hsl(var(--hue-color), 12%, 80%);
     }
+
     .prbt {
         background-color: #fff;
         border-color: #6c63ff
     }
+
     .prbt:hover {
         background-color: #6c63ff;
         border-color: #6c63ff
@@ -27,7 +30,7 @@
 /* Dark mode */
 
 @media (prefers-color-scheme: dark) {
-     :root {
+    :root {
         color-scheme: dark;
         --hue-color: 243;
         --body-bg: #0d1117;
@@ -40,23 +43,29 @@
         --foot-text-color: #ffffff;
         --scroll-bar-color: #0d1117;
         --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+        --scroll-thumb-hover-color: hsl(var(--hue-color), 12%, 26%);
     }
+
     .cdin {
         text-decoration-color: white;
     }
+
     .navx {
         color: #fff;
     }
+
     .prbt {
         background-color: #1a1a1a;
         border-color: #6c63ff;
         color: white;
     }
+
     .prbt:hover {
         background-color: #6c63ff;
         border-color: #6c63ff;
         color: white;
     }
+
     srch {
         background-color: #1a1a1a;
         color: white;
@@ -106,5 +115,5 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--text-color-light);
+    background-color: var(--scroll-thumb-hover-color);
 }

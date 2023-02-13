@@ -24,7 +24,7 @@ export default function Header() {
         <Container >
           <Nav >
             <Avatar className="mx-2 d-none d-md-block" alt="Anubhab Patnaik" src={a1} />
-            <Navbar.Brand href="#">ANUBHAV PATNAIK</Navbar.Brand>        </Nav>
+            <Navbar.Brand href="#">ANUBHAB PATNAIK</Navbar.Brand>        </Nav>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -49,7 +49,7 @@ export default function Header() {
         <Container >
           <Nav >
             <Avatar className="mx-2 d-none d-md-block" alt="Anubhab Patnaik" src={a1} />
-            <Navbar.Brand href="#">ANUBHAV PATNAIK</Navbar.Brand>
+            <Navbar.Brand href="#">ANUBHAB PATNAIK</Navbar.Brand>
           </Nav>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
