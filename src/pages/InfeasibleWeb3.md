@@ -1,7 +1,10 @@
 ---
-title: Why is Web3 a sham?
 author: Srijan Paul
-date: Jan 19, 2022
+title: Why is Web3 a sham?
+date: "2022-01-19"
+description: "A short rant on the state of Web3"
+tags: ["project", "crypto", "web3"]
+ShowBreadCrumbs: true 
 ---
 
 
@@ -23,15 +26,6 @@ Yet they choose to write them off as "tradeoffs" for *web3*, or worse, turn a bl
 And then there are the social problems -
 ones that are so nuanced that they can't be tackled by any number of token standards or consensus algorithms.
 This post is my attempt at shedding some light on the problems that I'm aware of.
-
-- [Social](#social)
-  - [The majority of crypto is shady, even for artists.](#the-majority-of-crypto-is-shady-even-for-artists)
-  - [NFT marketplaces are centralised and controlled.](#nft-marketplaces-are-centralised-and-controlled)
-  - [NFTs are... worthless?](#nfts-are-worthless)
-  - [Your 'get-rich-quick' chances are miniscule.](#your-get-rich-quick-chances-are-miniscule)
-- [Engineering](#engineering)
-  - [NFTs CAN be altered.](#nfts-can-be-altered)
-  - [Web3 is not technically feasible.](#web3-is-not-technically-feasible)
 
 ## Social
 
@@ -126,7 +120,7 @@ thousands of dollars.
 To most, it just won't make sense.
 Why should this clump of pixels cost 1M$?
 
-<img src="https://cryptopotato.com/wp-content/uploads/2021/03/cryptopunk.jpg" width="200" height="200"/>
+![cryptopunk](https://cryptopotato.com/wp-content/uploads/2021/03/cryptopunk.jpg)
 
 Why should we collectively enforce this belief? <br/>What can we achieve with this new school of thought that we couldn't before?
 
