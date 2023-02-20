@@ -4,6 +4,7 @@
         --hue-color: 243;
         --scroll-bar-color: #0d1117;
         --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+        --scroll-thumb-hover-color: hsl(var(--hue-color), 12%, 26%);
         --text-color-light: hsl(var(--hue-color), 8%, 65%);
         --color-prettylights-syntax-comment: #8b949e;
         --color-prettylights-syntax-constant: #79c0ff;
@@ -57,6 +58,7 @@
         --hue-color: 243;
         --scroll-bar-color: hsl(var(--hue-color), 12%, 100%);
         --scroll-thumb-color: hsl(var(--hue-color), 12%, 90%);
+        --scroll-thumb-hover-color: hsl(var(--hue-color), 12%, 80%);
         --color-prettylights-syntax-comment: #6e7781;
         --color-prettylights-syntax-constant: #0550ae;
         --color-prettylights-syntax-entity: #8250df;
@@ -115,7 +117,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--text-color-light);
+    background-color: var(--scroll-thumb-hover-color);
 }
 
 .markdown-body {
@@ -1060,14 +1062,12 @@
 }
 
 .ic {
-
     color: var(--foot-text-color) !important;
     padding-left: 3px !important;
     padding-right: 3px !important;
     margin-right: 3px !important;
     margin-left: 3px !important;
     text-decoration: none !important;
-
 }
 
 .foot {
