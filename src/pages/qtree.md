@@ -6,8 +6,8 @@ description: "Inspired by KoalasToTheMax, QTree is a short live demonstration of
 tags: ["project", "tree", "quadtree", "image", "compression"," decompression", "javascript", "canvas", "web"]
 ShowBreadCrumbs: true 
 ---
-<script type="module" src="/static/js/qtree/index.js" ></script>
-<script type="module" src="/static/js/qtree/qdtree.js" ></script>
+<script type="module" src="/oldblog/static/js/qtree/index.js" ></script>
+<script type="module" src="/oldblog/static/js/qtree/qdtree.js" ></script>
 
 I stumbled upon [KoalasToTheMax](https://koalastothemax.com/) while reading a blog post about the most exciting web pages built for fun, and I was blown away. [Srijan](https://injuly.in/) explained how it works, and we were inspired to create something similar.
 
