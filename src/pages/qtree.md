@@ -6,6 +6,9 @@ description: "Inspired by KoalasToTheMax, QTree is a short live demonstration of
 tags: ["project", "tree", "quadtree", "image", "compression"," decompression", "javascript", "canvas", "web"]
 ShowBreadCrumbs: true 
 ---
+<script type="module" src="/static/js/qtree/index.js" ></script>
+<script type="module" src="/static/js/qtree/qdtree.js" ></script>
+
 I stumbled upon [KoalasToTheMax](https://koalastothemax.com/) while reading a blog post about the most exciting web pages built for fun, and I was blown away. [Srijan](https://injuly.in/) explained how it works, and we were inspired to create something similar.
 
 But first, let's get into the basics of the data structures used in our project.
@@ -49,7 +52,6 @@ Functions:
 
 ## Demonstration
 
-{{< rawhtml >}}
 <div class="container" style="text-align: center;">
 	<canvas id="canvas-2"  style="border: 1px solid black;"	>
 	</canvas>
@@ -57,10 +59,8 @@ Functions:
 	
 Hover over any part of the canvas to recursively divide it into four quadrants.
 </div>
-{{< /rawhtml >}}
 
 
-{{< rawhtml >}}
 <div class="container" style="text-align: center;">
 	<canvas id="canvas-1" style="border: 1px solid black;"> </canvas>
 	<br>
@@ -70,13 +70,6 @@ Hover over any part of the canvas to recursively divide it into four quadrants.
 The slider controls the depth of the tree.
 </div>
  The slider is set to 0 by default, which means the entire image is compressed into a single pixel. The slider when set to 100 means the image is not compressed at all. The slider can be set to any value between 0 and 100.
-{{< /rawhtml >}}
-
-
-{{< rawhtml >}}
-<script type="module" src="./static/js/qtree/index.js" ></script>
-<script type="module" src="./static/js/qtree/index.js" ></script>
-{{< /rawhtml >}}
 
 ## Setting up the Canvas
 
