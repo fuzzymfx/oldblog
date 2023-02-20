@@ -4,3 +4,4 @@
 1. [Why is Web3 not feasible?](./InfeasibleWeb3.html)
 1. [MetaMUI Wallet: A case study](./metamuiwallet.html)
 1. [Rust: The next C++?](./rust.html)
+1. [QTree: Image compression using Quadtree](./qtree.html)
