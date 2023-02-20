@@ -97,7 +97,9 @@
 
                     Anubhab Patnaik
                 </p>
-                <p>I stumbled upon <a href="https://koalastothemax.com/">KoalasToTheMax</a> while reading a blog post about the most exciting web pages built for fun, and I was blown away. <a href="https://injuly.in/">Srijan</a> explained how it works, and we were inspired to create something similar.</p>
+                <script type="module" src="/static/js/qtree/index.js" ></script>
+<script type="module" src="/static/js/qtree/qdtree.js" ></script>
+<p>I stumbled upon <a href="https://koalastothemax.com/">KoalasToTheMax</a> while reading a blog post about the most exciting web pages built for fun, and I was blown away. <a href="https://injuly.in/">Srijan</a> explained how it works, and we were inspired to create something similar.</p>
 <p>But first, let’s get into the basics of the data structures used in our project.</p>
 <h2 id="quadtree" tabindex="-1">Quadtree</h2>
 <p>A quadtree is a tree-based data structure where each node has exactly four child nodes. Our quadtree represents a partition of space in two dimensions by dividing the region into four equal quadrants. Each quadrant is then subdivided into four equal quadrants, and so on. Each node in the tree has exactly four children or no children at all, which makes it a leaf node. The height of a quadtree depends on the amount of data being decomposed.</p>
@@ -131,15 +133,12 @@
 <li><strong>computeAverageColor</strong>: computes the average color of the node. Takes the quadtree and the image data as the input and returns the pixel value.</li>
 </ul>
 <h2 id="demonstration" tabindex="-1">Demonstration</h2>
-<p>{{&lt; rawhtml &gt;}}</p>
 <div class="container" style="text-align: center;">
 	<canvas id="canvas-2"  style="border: 1px solid black;"	>
 	</canvas>
 	<br>
 <p>Hover over any part of the canvas to recursively divide it into four quadrants.</p>
 </div>
-{{< /rawhtml >}}
-<p>{{&lt; rawhtml &gt;}}</p>
 <div class="container" style="text-align: center;">
 	<canvas id="canvas-1" style="border: 1px solid black;"> </canvas>
 	<br>
@@ -148,11 +147,6 @@
 <p>The slider controls the depth of the tree.</p>
 </div>
  The slider is set to 0 by default, which means the entire image is compressed into a single pixel. The slider when set to 100 means the image is not compressed at all. The slider can be set to any value between 0 and 100.
-{{< /rawhtml >}}
-<p>{{&lt; rawhtml &gt;}}</p>
-<script type="module" src="./static/js/qtree/index.js" ></script>
-<script type="module" src="./static/js/qtree/index.js" ></script>
-<p>{{&lt; /rawhtml &gt;}}</p>
 <h2 id="setting-up-the-canvas" tabindex="-1">Setting up the Canvas</h2>
 <p>To start with, we need two canvases - one for you to hover over and the other for you to control the depth of the tree using a slider and render the nodes evenly. Initially, we had multiple ways of taking an image as the input form, such as uploading an image, using query parameters, etc. But for this demonstration, we’ll keep it simple and use a static image.</p>
 <p>Here’s some JavaScript code that will load the image into a canvas:</p>
